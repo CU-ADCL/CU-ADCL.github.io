@@ -78,10 +78,10 @@ lang: en-GB # Set the site language
 title: "Autonomous Decision and Control Lab" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Autonomous Decision and Control Lab" # Site description and default description, also used in jekyll-seo-tag
-url: "https://qhho.github.io/" # Site url, also used in jekyll-seo-tag
+url: "https://Sunberg-Research-Group.github.io/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/qhho/qhho.github.io"
-email: "qiho6236@colorado.edu"
+repo: "https://github.com/Sunberg-Research-Group/Sunberg-Research-Group.github.io"
+email: ""
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
