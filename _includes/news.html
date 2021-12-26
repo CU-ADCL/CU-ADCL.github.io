@@ -1,0 +1,12 @@
+<h1>News</h1>
+<table>
+    {% for row in site.data.news %}
+      {% if forloop.first %}
+      <!-- Skip the header -->
+      {% endif %}
+      <tr class="row1">
+        <td class="col1">{{ row["Date"] | date_to_string}}</td>
+        <td>{{ row["Item"] | markdownify }}</td>
+      </tr>
+    {% endfor %}
+</table>
