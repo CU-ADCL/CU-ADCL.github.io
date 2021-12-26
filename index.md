@@ -1,3 +1,3 @@
-% Autonomous Decision and Control Lab
+# Autonomous Decision and Control Lab
 
 {%include news.html %}
