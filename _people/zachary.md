@@ -4,7 +4,7 @@ ordering: 1
 email: zachary.sunberg@colorado.edu
 program: Faculty Member
 status: current
-picture:
+picture: /assets/images/zachary_sunberg.jpg
 picture-link: https://zachary.sunberg.net/
 header-link: http://zachary.sunberg.net/
 ---
