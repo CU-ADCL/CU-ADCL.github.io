@@ -1,6 +1,6 @@
 ---
 name: Zakariya Laouar
-ordering: 6
+ordering: 7
 email: Zakariya.Laouar@colorado.edu
 program: Masters Student
 status: current
