@@ -1,7 +1,7 @@
 ---
 name: John Tucker
 ordering: 8
-email: John.Tucker@colorado.edu
+email: Johnathan.Tucker@colorado.edu
 program: Masters Student
 status: current
 picture: /assets/images/john_tucker.png
