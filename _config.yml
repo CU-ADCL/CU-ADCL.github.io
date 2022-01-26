@@ -78,7 +78,7 @@ lang: en-GB # Set the site language
 title: "Autonomous Decision and Control Lab" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Autonomous Decision and Control Lab" # Site description and default description, also used in jekyll-seo-tag
-url: "https://CU-ADCL.github.io/" # Site url, also used in jekyll-seo-tag
+url: "https://www.cu-adcl.org/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/CU-ADCL/CU-ADCL.github.io"
 email: ""
