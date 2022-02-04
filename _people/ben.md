@@ -1,7 +1,7 @@
 ---
 name: Ben Kraske
 ordering: 4
-email: ben.kraske@colorado.edu
+email: benjamin.kraske@colorado.edu
 program: PhD Student
 status: current
 picture: /assets/images/ben_kraske.jpg
