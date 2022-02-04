@@ -1,12 +1,7 @@
 ---
 name: John Tucker
-<<<<<<< HEAD
 ordering: 9
 email: John.Tucker@colorado.edu
-=======
-ordering: 8
-email: Johnathan.Tucker@colorado.edu
->>>>>>> e340e300d8498416c554e23943e0e225bb956448
 program: Masters Student
 status: current
 picture: /assets/images/john_tucker.png
