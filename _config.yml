@@ -76,7 +76,7 @@ collections:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Autonomous Decision and Control Lab" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/ADCL.svg" # Site logo, also used in jekyll-seo-tag
 description: "Autonomous Decision and Control Lab" # Site description and default description, also used in jekyll-seo-tag
 url: "https://www.cu-adcl.org/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
@@ -92,14 +92,14 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  16: "/assets/logos/logo.svg"
-  32: "/assets/logos/logo.svg"
-  96: "/assets/logos/logo.svg"
-  120: "/assets/logos/logo.svg"
-  144: "/assets/logos/logo.svg"
-  180: "/assets/logos/logo.svg"
-  512: "/assets/logos/logo.svg"
-  1024: "/assets/logos/logo.svg"
+  16: "/assets/logos/ADCL-square.svg"
+  32: "/assets/logos/ADCL-square.svg"
+  96: "/assets/logos/ADCL-square.svg"
+  120: "/assets/logos/ADCL-square.svg"
+  144: "/assets/logos/ADCL-square.svg"
+  180: "/assets/logos/ADCL-square.svg"
+  512: "/assets/logos/ADCL-square.svg"
+  1024: "/assets/logos/ADCL-square.svg"
 
 # 9. Site navigation
 navigation_header:
