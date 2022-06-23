@@ -1,0 +1,44 @@
+{
+  "lang": "en-GB",
+  "name": "Autonomous Decision and Control Lab",
+  "short_name": "AutonomousDecisionandControlLab",
+  "theme_color": "#24292e",
+  "background_color": "#ffffff",
+  "icons": [
+      {
+        "src": "/assets/logos/ADCL-square.svg",
+        "sizes": "16x16"
+      },
+      {
+        "src": "/assets/logos/ADCL-square.svg",
+        "sizes": "32x32"
+      },
+      {
+        "src": "/assets/logos/ADCL-square.svg",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/assets/logos/ADCL-square.svg",
+        "sizes": "120x120"
+      },
+      {
+        "src": "/assets/logos/ADCL-square.svg",
+        "sizes": "144x144"
+      },
+      {
+        "src": "/assets/logos/ADCL-square.svg",
+        "sizes": "180x180"
+      },
+      {
+        "src": "/assets/logos/ADCL-square.svg",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/assets/logos/ADCL-square.svg",
+        "sizes": "1024x1024"
+      }
+      
+    ],
+  "start_url": "/",
+  "display": "standalone"
+}
