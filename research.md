@@ -1,8 +1,8 @@
 ---
-title: Projects
+title: Research
 layout: page 
-permalink: /projects/
-class: projects
+permalink: /research/
+class: research
 ---
 
 Under construction!
