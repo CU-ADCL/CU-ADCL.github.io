@@ -32,6 +32,7 @@ plugins:
 - jekyll-feed
 - jekyll-commonmark
 - jekyll-include-cache
+- jekyll-scholar
 - jemoji
 
 # 3. Gem settings
@@ -139,4 +140,4 @@ fonts:
     - https://fonts.gstatic.com
   font_urls:
     - https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
