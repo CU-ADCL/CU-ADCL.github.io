@@ -5,7 +5,7 @@ permalink: /research/
 class: research
 ---
 
-# Behavior-Aware Autonomous Driving
+## Behavior-Aware Autonomous Driving
 
 <video autoplay="autoplay" loop="loop" width="100%" controls>
   <source src="/assets/videos/highway_planning.mp4" type="video/mp4">
@@ -25,10 +25,12 @@ In computational tests in a highway driving scenario, internal state modeling al
 
 ![Safety-Efficiency Tradeoff](assets/images/pareto.png)
 
-- Paper: [https://arxiv.org/abs/1702.00858 ](https://arxiv.org/abs/1702.00858)
+- Papers:
+    - [https://arxiv.org/abs/2005.14549](https://arxiv.org/abs/2005.14549)
+    - [https://arxiv.org/abs/1702.00858](https://arxiv.org/abs/1702.00858)
 
 
-# POMCPOW: An online algorithm for Continuous POMDPs
+## POMCPOW: An online algorithm for Continuous POMDPs
 
 ![POMCPOW Tree](assets/images/pomcpow.png)
 
@@ -44,7 +46,7 @@ For example, in the light-dark example shown below, POMCP (top) cannot decide to
 - Code: [https://github.com/JuliaPOMDP/POMCPOW.jl ](https://github.com/JuliaPOMDP/POMCPOW.jl)
 
 
-# Autonomous Autorotation
+## Autonomous Autorotation
 
 In 2013, Professor Sunberg (as an MS student) and collaborators used autorotation to repeatedly successfully land a small autonomous helicopter without power.
 The video below contains footage of one of the landings from a nose-mounted camera.
