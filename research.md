@@ -14,7 +14,7 @@ class: research
   ![Highway Lane Change Planning](assets/images/highway_planning.png)
 </video>
 
-![Internal States](assets/images/states.svg.png)
+![Internal States](/assets/images/states.svg.png)
 
 In autonomous driving, there is an inherent tradeoff between safety and efficiency, especially time-efficiency.
 If a self-driving car is to be perfectly safe, it cannot enter the road, and it can be the fastest if there are no safety constraints.
@@ -23,7 +23,7 @@ But the performance also depends on the model.
 We showed that by modeling the latent internal states of the other drivers on the road, safety and efficiency can both be *simultaneously* improved (this corresponds to moving the Pareto curve).
 In computational tests in a highway driving scenario, internal state modeling allowed the autonomous vehicle to perform a multiple-lane change maneuver nearly twice as fast with the same level of safety.
 
-![Safety-Efficiency Tradeoff](assets/images/pareto.png)
+![Safety-Efficiency Tradeoff](/assets/images/pareto.png)
 
 - Papers:
     - [https://arxiv.org/abs/2005.14549](https://arxiv.org/abs/2005.14549)
@@ -32,7 +32,7 @@ In computational tests in a highway driving scenario, internal state modeling al
 
 ## POMCPOW: An online algorithm for Continuous POMDPs
 
-![POMCPOW Tree](assets/images/pomcpow.png)
+![POMCPOW Tree](/assets/images/pomcpow.png)
 
 Leading online partially observable Markov decision process (POMDP) solvers such as POMCP and DESPOT can handle continuous state spaces, but they still struggle with continuous action and observation spaces.
 In fact, it can be shown analytically that they will converge to suboptimal solutions for some POMDPs with continuous action spaces regardless of the amount of computation.
