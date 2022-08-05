@@ -117,7 +117,7 @@
   {
     "title": "Publications",
     "excerpt": "\n",
-    "content": "Ho, Q. H., Ilyes, R. B., Sunberg, Z., &amp; Lahijanian, M. (2022). Automaton-Guided Control Synthesis for Signal Temporal Logic Specifications. IEEE Conference on Decision and Control. https://arxiv.org/abs/2207.03662\nGupta, H., Hayes, B., &amp; Sunberg, Z. (2022). Intention-Aware Navigation in Crowds with Extended-Space POMDP Planning. Autonomous Agents and Multi-Agent Systems. https://arxiv.org/pdf/2206.10028.pdf\nHo, Q. H., Sunberg, Z. N., &amp; Lahijanian, M. (2022). Gaussian Belief Trees for Chance Constrained Asymptotically Optimal Motion Planning. 2022 International Conference on Robotics and Automation (ICRA), 11029–11035. https://doi.org/10.1109/ICRA46639.2022.9812343\nPeters, L., Fridovich-Keil, D., Tomlin, C., &amp; Sunberg, Z. (2020). Inference-Based Strategy Alignment for General-Sum Differential Games. International Conference on Autonomous Agents and Multiagent Systems (AAMAS). https://arxiv.org/abs/2002.04354\nLim, M. H., Tomlin, C. J., &amp; Sunberg, Z. N. (2020). Sparse Tree Search Optimality Guarantees in POMDPs with Continuous Observation Spaces. International Joint Conference on Artificial Intelligence (IJCAI).\n",
+    "content": "\n\n",
     "url": "/publications/"
   },
   
