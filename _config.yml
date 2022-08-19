@@ -1,14 +1,3 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site favicons & manifest icons
-# 9. Site navigation
-
 # 1. Files excluded from Jekyll builds
 exclude:
 - README.md
@@ -114,24 +103,5 @@ navigation_header:
   url: /people/
 - title: Resources
   url: /resources/
-
-# navigation_footer:
-# - title: Created by David Darnes
-#   url: https://darn.es
-
-# sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
-#   Twitter: "#0d94e7"
-#   facebook: "#3B5998"
-#   Email: true
-
-# Load custom fonts from fonts.google.com etc
-#
-# TIP: Try to keep the number of urls as low to reduce the performance cost
-#      If multiple fonts can be requested in a single url opt for this
-fonts:
-  preconnect_urls:
-    - https://fonts.gstatic.com
-  font_urls:
-    - https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
