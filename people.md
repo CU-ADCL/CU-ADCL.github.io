@@ -1,6 +1,6 @@
 ---
 title: People 
-layout: page 
+layout: single 
 permalink: /people/
 class: people
 ---
