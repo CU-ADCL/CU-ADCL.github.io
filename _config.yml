@@ -64,14 +64,14 @@ collections:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-lang: en-GB # Set the site language
+lang: en-US # Set the site language
 title: "Autonomous Decision and Control Lab" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/ADCL.svg" # Site logo, also used in jekyll-seo-tag
 description: "Autonomous Decision and Control Lab" # Site description and default description, also used in jekyll-seo-tag
 url: "https://www.cu-adcl.org/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/CU-ADCL/CU-ADCL.github.io"
-email: ""
+email: "zachary.sunberg@colorado.edu"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
@@ -90,18 +90,5 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
   180: "/assets/logos/ADCL-square.svg"
   512: "/assets/logos/ADCL-square.svg"
   1024: "/assets/logos/ADCL-square.svg"
-
-# 9. Site navigation
-navigation_header:
-- title: Home
-  url: /
-- title: Research
-  url: /research/
-- title: Publications
-  url: /publications/
-- title: People
-  url: /people/
-- title: Resources
-  url: /resources/
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
