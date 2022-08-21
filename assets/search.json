@@ -94,10 +94,10 @@
   
   
   {
-    "title": "About",
-    "excerpt": "\n",
-    "content": "Under construction!\n",
-    "url": "/about/"
+    "title": "Autonomous Decision and Control Lab",
+    "excerpt": "We study and develop autonomy with an uncertainty-first approach.\n",
+    "content": "News\n\n    \n      \n      \n      \n      \n        04 Aug 2022\n        We released the POMDPTools package, consolidating important tools for POMDPs.jl\n\n      \n    \n      \n      \n        16 Jul 2022\n        Our paper on \"Automaton-Guided Control Synthesis for Signal Temporal Logic Specifications\" has been accepted for presentation at CDC 2022.\n\n      \n    \n      \n      \n        11 Apr 2022\n        Himanshu successfully defended his Master’s Thesis. Congratulations Himanshu!\n\n      \n    \n      \n      \n        07 Apr 2022\n        Ben Kraske and John Tucker have received the NSF GRFP award. Congratulations Ben and John!\n\n      \n    \n      \n      \n        31 Jan 2022\n        Our paper on \"Gaussian Belief Trees for Chance Constrained Asymptotically Optimal Motion Planning\" has been accepted for presentation at ICRA 2022.\n\n      \n    \n      \n      \n        20 Dec 2022\n        Our paper on \"Intention-Aware Navigation in Crowds with Extended-Space POMDP Planning\" has been accepted for presentation at AAMAS 2022. (Slides)\n\n      \n    \n      \n      \n        01 Dec 2021\n        Our website is finally up!\n\n      \n    \n\n\n",
+    "url": "/"
   },
   
   {
@@ -108,23 +108,16 @@
   },
   
   {
-    "title": "Projects",
-    "excerpt": "\n",
-    "content": "Under construction!\n",
-    "url": "/projects/"
-  },
-  
-  {
     "title": "Publications",
     "excerpt": "\n",
-    "content": "\n\n",
+    "content": "Publications\n\n\n\n",
     "url": "/publications/"
   },
   
   {
     "title": "Research",
     "excerpt": "\n",
-    "content": "Behavior-Aware Autonomous Driving\n\n\n  \n  \n  \n  ![Highway Lane Change Planning](assets/images/highway_planning.png)\n\n\n\n\nIn autonomous driving, there is an inherent tradeoff between safety and efficiency, especially time-efficiency.\nIf a self-driving car is to be perfectly safe, it cannot enter the road, and it can be the fastest if there are no safety constraints.\nThis tradeoff results in the Pareto curves shown in the figure below.\nBut the performance also depends on the model.\nWe showed that by modeling the latent internal states of the other drivers on the road, safety and efficiency can both be simultaneously improved (this corresponds to moving the Pareto curve).\nIn computational tests in a highway driving scenario, internal state modeling allowed the autonomous vehicle to perform a multiple-lane change maneuver nearly twice as fast with the same level of safety.\n\n\n\n\n  Papers:\n    \n      https://arxiv.org/abs/2005.14549\n      https://arxiv.org/abs/1702.00858\n    \n  \n\n\nPOMCPOW: An online algorithm for Continuous POMDPs\n\n\n\nLeading online partially observable Markov decision process (POMDP) solvers such as POMCP and DESPOT can handle continuous state spaces, but they still struggle with continuous action and observation spaces.\nIn fact, it can be shown analytically that they will converge to suboptimal solutions for some POMDPs with continuous action spaces regardless of the amount of computation.\nWe have proposed a new algorithm, POMCPOW that overcomes these problems using progressive widening and weighted particle filtering.\n\nFor example, in the light-dark example shown below, POMCP (top) cannot decide to localize in the light region, while POMCPOW (bottom) can, allowing it to hit the target at the origin much more quickly.\n\n\n\n\n  Paper: https://arxiv.org/abs/1709.06196 \n  Code: https://github.com/JuliaPOMDP/POMCPOW.jl \n\n\nAutonomous Autorotation\n\nIn 2013, Professor Sunberg (as an MS student) and collaborators used autorotation to repeatedly successfully land a small autonomous helicopter without power.\nThe video below contains footage of one of the landings from a nose-mounted camera.\nNote that the pilot releases control as he turns off the motor.\n\n\n\n\n  Paper: http://www.ingentaconnect.com/content/ahs/jahs/2015/00000060/00000002/art00008 \n\n",
+    "content": "Behavior-Aware Autonomous Driving\n\n\n  \n  \n  \n  ![Highway Lane Change Planning](/assets/images/highway_planning.png)\n\n\n\n\nIn autonomous driving, there is an inherent tradeoff between safety and efficiency, especially time-efficiency.\nIf a self-driving car is to be perfectly safe, it cannot enter the road, and it can be the fastest if there are no safety constraints.\nThis tradeoff results in the Pareto curves shown in the figure below.\nBut the performance also depends on the model.\nWe showed that by modeling the latent internal states of the other drivers on the road, safety and efficiency can both be simultaneously improved (this corresponds to moving the Pareto curve).\nIn computational tests in a highway driving scenario, internal state modeling allowed the autonomous vehicle to perform a multiple-lane change maneuver nearly twice as fast with the same level of safety.\n\n\n\n\n  Papers:\n    \n      https://arxiv.org/abs/2005.14549\n      https://arxiv.org/abs/1702.00858\n    \n  \n\n\nPOMCPOW: An online algorithm for Continuous POMDPs\n\n\n\nLeading online partially observable Markov decision process (POMDP) solvers such as POMCP and DESPOT can handle continuous state spaces, but they still struggle with continuous action and observation spaces.\nIn fact, it can be shown analytically that they will converge to suboptimal solutions for some POMDPs with continuous action spaces regardless of the amount of computation.\nWe have proposed a new algorithm, POMCPOW that overcomes these problems using progressive widening and weighted particle filtering.\n\nFor example, in the light-dark example shown below, POMCP (top) cannot decide to localize in the light region, while POMCPOW (bottom) can, allowing it to hit the target at the origin much more quickly.\n\n\n\n\n  Paper: https://arxiv.org/abs/1709.06196 \n  Code: https://github.com/JuliaPOMDP/POMCPOW.jl \n\n\nAutonomous Autorotation\n\nIn 2013, Professor Sunberg (as an MS student) and collaborators used autorotation to repeatedly successfully land a small autonomous helicopter without power.\nThe video below contains footage of one of the landings from a nose-mounted camera.\nNote that the pilot releases control as he turns off the motor.\n\n\n\n\n  Paper: http://www.ingentaconnect.com/content/ahs/jahs/2015/00000060/00000002/art00008 \n\n",
     "url": "/research/"
   },
   
