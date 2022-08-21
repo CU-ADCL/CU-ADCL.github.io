@@ -72,6 +72,7 @@ description: "Autonomous Decision and Control Lab" # Site description and defaul
 url: "https://www.cu-adcl.org/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/CU-ADCL/CU-ADCL.github.io"
+repository: "https://github.com/CU-ADCL/CU-ADCL.github.io"
 email: "zachary.sunberg@colorado.edu"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
