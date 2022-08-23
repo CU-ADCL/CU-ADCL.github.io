@@ -22,7 +22,6 @@ plugins:
 - jekyll-feed
 - jekyll-commonmark
 - jekyll-include-cache
-- jekyll-scholar
 - jemoji
 
 # 3. Gem settings
