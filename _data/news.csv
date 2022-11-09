@@ -1,5 +1,5 @@
 Date,Item
-2022-10-01,"Tyler and Jackson presented their respective research on imperfect information games and adaptive stress testing at the AMOS conference."
+2022-10-01,"Tyler and Jackson presented their respective research on [imperfect information games](https://amostech.com/TechnicalPapers/2022/Poster/Becker.pdf) and [adaptive stress testing](https://amostech.com/TechnicalPapers/2022/Machine-Learning-for-SSA-Applications/Tucker.pdf) at the AMOS conference."
 2022-08-22,"We are organizing a [workshop on game theory for CoRL 2022](https://sites.google.com/view/corl-2022-games-workshop/) on Dec 15."
 2022-08-04,"We released the POMDPTools package, consolidating important tools for [POMDPs.jl](https://github.com/JuliaPOMDP/POMDPs.jl)"
 2022-07-16,"Our paper on &quot;[Automaton-Guided Control Synthesis for Signal Temporal Logic Specifications](https://arxiv.org/abs/2207.03662)&quot; has been accepted for presentation at CDC 2022."
