@@ -3,7 +3,12 @@ title: People
 layout: single 
 permalink: /people/
 class: people
+toc: true
+toc_label: "Quick Links"
+toc_icon: "link"
 ---
+
+# Current Members
 
 {% assign roles = "Faculty#Faculty Member&PhD Students#PhD Student&Master's Students#MS Student&Visiting Scholars#Visiting Scholar" | split: '&' %}
 
@@ -11,7 +16,7 @@ class: people
 
 {% for role in roles %}
 {% assign rolepair = role | split: '#' %}
-<h2>{{rolepair[0]}}</h2>
+## {{rolepair[0]}}
 {% for person in sorted %}
 {% if person.status == "current" and person.program == rolepair[1] %}
 <div class="person">
@@ -49,7 +54,7 @@ class: people
 {% endfor %}
 {% endfor %}
 
-<h1>Alumni</h1>
+# Alumni
 
 {% for person in site.people %}
 {% if person.status == "former" %}
