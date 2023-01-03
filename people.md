@@ -5,35 +5,46 @@ permalink: /people/
 class: people
 ---
 
+{% comment %}
 {% assign sorted = site.people | sort: 'ordering' %}
-{% for people in sorted %}
-{% if people.status == "current" %}
-<div class="flex-container">
-<div class="flex-child disappearing">
-{% if people.picture-link != blank %}
-<a href="{{ people.picture-link }}" target="_blank"><img src="{{ site.baseurl }}{{ people.picture }}" alt="{{ people.name }}" title="{{ people.name }}"></a>
-{% elsif people.generate-extra-page %}
-<a href="{{ site.baseurl }}{{ people.url }}" target="_blank"><img src="{{ site.baseurl }}{{ people.picture }}" alt="{{ people.name }}" title="{{ people.name }}"></a>
+{% endcomment %}
+
+{% assign roles = "Faculty#Faculty Member&PhD Students#PhD Student" | split: '&' %}
+
+{% for role in roles %}
+{% assign rolepair = role | split: '#' %}
+<h2>{{rolepair[0]}}</h2>
+{% for person in site.people %}
+{% if person.status == "current" and person.program == rolepair[1] %}
+<div class="person">
+<div class="person-basic">
+<div class="person-img">
+{% if person.picture-link != blank %}
+<a href="{{ person.picture-link }}" target="_blank"><img src="{{ site.baseurl }}{{ person.picture }}" alt="{{ person.name }}" title="{{ person.name }}" class="person-img"></a>
+{% elsif person.generate-extra-page %}
+<a href="{{ site.baseurl }}{{ person.url }}" target="_blank"><img src="{{ site.baseurl }}{{ person.picture }}" alt="{{ person.name }}" title="{{ person.name }}" class="person-img"></a>
 {% else %}
-<img src="{{ site.baseurl }}{{ people.picture }}" alt="{{ people.name }}" title="{{ people.name }}">
+<img src="{{ site.baseurl }}{{ person.picture }}" alt="{{ person.name }}" title="{{ person.name }}" class="person-img">
 {% endif %}
 </div>
-<div class="flex-child">
-<h3>
-{% if people.picture-link != blank %}
-<a href="{{ people.header-link }}" target="_blank">{{ people.name }}</a>
-{% elsif people.generate-extra-page %}
-<a href="{{ site.baseurl }}{{ people.url }}" target="_blank">{{ people.name }}</a>
+<div class="person-info">
+<h4>
+{% if person.picture-link != blank %}
+<a href="{{ person.header-link }}" target="_blank">{{ person.name }}</a>
+{% elsif person.generate-extra-page %}
+<a href="{{ site.baseurl }}{{ person.url }}" target="_blank">{{ person.name }}</a>
 {% else %}
-{{ people.name }}
+{{ person.name }}
 {% endif %}
-</h3>
-<div class="flex-child">
-    <p>{{ people.program }}, 
-    <a href="mailto:{{ people.email }}">{{ people.email }}</a>
-    {{ people.excerpt | markdownify }}</p>
+</h4>
+    <p>{{ person.program }}<br>
+    <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
 </div>
+</div>
+<div class="person-bio">
+    <p>{{ person.excerpt | markdownify }}</p>
 </div>
 </div>
 {% endif %}
+{% endfor %}
 {% endfor %}
