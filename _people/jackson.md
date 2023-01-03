@@ -1,8 +1,8 @@
 ---
 name: Jackson Wagner
-ordering: 9
+start-year: 2022
 email: jackson.wagner-1@colorado.edu
-program: Masters Student
+program: MS Student
 status: current
 picture: /assets/images/jackson_wagner.jpg
 picture-link: 

@@ -1,6 +1,6 @@
 ---
 name: Ben Kraske
-ordering: 4
+start-year: 2020
 email: benjamin.kraske@colorado.edu
 program: PhD Student
 status: current
