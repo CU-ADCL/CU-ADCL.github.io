@@ -10,4 +10,6 @@ header:
 excerpt: We study and develop autonomy with an uncertainty-first approach.
 ---
 
+You can find out more about the ADCL using the [Research](research), [Publications](publications), and [People](people) links above.
+
 {%include news.html %}
