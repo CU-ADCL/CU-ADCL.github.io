@@ -23,6 +23,12 @@ var store = [{
         "url": "/people/john/",
         "teaser": null
       },{
+        "title": "Juyeop",
+        "excerpt":"Hola! I am Juyeop. I am a visiting scholar in the Department of Aerospace Engineering at CU Boulder. I am pursuing a Master’s degree in Aerospace Engineering at KAIST. I received my Bachelor’s degree in Mechanical Engineering from Seoul National University. My main research interest includes the safety of robots...","categories": [],
+        "tags": [],
+        "url": "/people/juyeop/",
+        "teaser": null
+      },{
         "title": "Michael",
         "excerpt":"I am a PhD student in Electrical Engineering and Computer Sciences - Control, Intelligent Systems, and Robotics (CIR) at UC Berkeley, grateful to be advised by Profs. Claire J. Tomlin and Zachary N. Sunberg. I am interested in developing autonomous systems and architectures that integrate learning, control, and planning to...","categories": [],
         "tags": [],
@@ -48,14 +54,14 @@ var store = [{
         "teaser": null
       },{
         "title": "Zachary",
-        "excerpt":"Zachary Sunberg is an Assistant Professor in the Ann and H.J. Smead Aerospace Engineering Sciences Department. He earned Bachelors and Masters degrees in Aerospace Engineering from Texas A&amp;M University and a PhD in Aeronautics and Astronautics at Stanford University in the Stanford Intelligent Systems Lab. Before joining the University of...","categories": [],
+        "excerpt":"I’m an Assistant Professor in the Ann and H.J. Smead Aerospace Engineering Sciences Department. I earned Bachelors and Masters degrees in Aerospace Engineering from Texas A&amp;M University and a PhD in Aeronautics and Astronautics at Stanford University in the Stanford Intelligent Systems Lab. Before joining the University of Colorado faculty,...","categories": [],
         "tags": [],
         "url": "/people/zachary/",
         "teaser": null
       },{
-        "title": "Zaky",
+        "title": "Zaki",
         "excerpt":"Hi, I’m Zaki. I am a second year M.Sc. student in the Department of Aerospace Engineering at the University of Colorado Boulder. I received a B.Sc. in Aerospace Engineering also at CU Boulder. My current research revolves around a couple of projects within the domain of contingency management of UAS...","categories": [],
         "tags": [],
-        "url": "/people/zaky/",
+        "url": "/people/zaki/",
         "teaser": null
       },]
