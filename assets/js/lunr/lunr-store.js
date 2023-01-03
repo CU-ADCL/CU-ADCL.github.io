@@ -41,6 +41,12 @@ var store = [{
         "url": "/people/qiheng/",
         "teaser": null
       },{
+        "title": "Sujeong",
+        "excerpt":"Bio coming soon!  ","categories": [],
+        "tags": [],
+        "url": "/people/sujeong/",
+        "teaser": null
+      },{
         "title": "Tyler",
         "excerpt":"I’m a PhD student at CU Boulder and received my bachelor’s degree in aerospace engineering at Rutgers University New Brunswick, New Jersey. My research interests lie at the intersection of decision making under uncertainty and game theory. I began my research by investigating POMDP solution methods for finding cost-effective coronavirus...","categories": [],
         "tags": [],
