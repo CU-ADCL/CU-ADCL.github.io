@@ -1,6 +1,6 @@
 ---
 name: Himanshu Gupta
-ordering: 6
+start-year: 2020
 email: Himanshu.Gupta@colorado.edu
 program: PhD Student
 status: current

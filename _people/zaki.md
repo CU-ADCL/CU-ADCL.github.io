@@ -1,8 +1,8 @@
 ---
 name: Zakariya Laouar
-ordering: 7
+start-year: 2021
 email: Zakariya.Laouar@colorado.edu
-program: Masters Student
+program: PhD Student
 status: current
 picture: /assets/images/zakariya_laouar.jpg
 picture-link: 
