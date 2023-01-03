@@ -17,7 +17,9 @@ class: people
 <div class="person">
 <div class="person-basic">
 <div class="person-img">
-{% if person.picture-link != blank %}
+{% if person.picture == blank %}
+<img src="/assets/logos/ADCL-square.svg" alt="{{ person.name }}" title="{{ person.name }}" class="person-img">
+{% elsif person.picture-link != blank %}
 <a href="{{ person.picture-link }}" target="_blank"><img src="{{ site.baseurl }}{{ person.picture }}" alt="{{ person.name }}" title="{{ person.name }}" class="person-img"></a>
 {% elsif person.generate-extra-page %}
 <a href="{{ site.baseurl }}{{ person.url }}" target="_blank"><img src="{{ site.baseurl }}{{ person.picture }}" alt="{{ person.name }}" title="{{ person.name }}" class="person-img"></a>
