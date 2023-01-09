@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Sujeong",
-        "excerpt":"Bio coming soon!  ","categories": [],
+        "excerpt":"Hi! I am Su-Jeong. I’m a visiting scholar in the Department of Aerospace Engineering at CU Boulder. I’m pursuing a PhD degree in Aerospace Engineering at KAIST. I received my Bachelor’s degree in Aerospace Engineering at Sejong University and Masters in Aerospace Engineering at KAIST in the Laboratory for information...","categories": [],
         "tags": [],
         "url": "/people/sujeong/",
         "teaser": null
