@@ -6,6 +6,7 @@ class: people
 toc: true
 toc_label: "Quick Links"
 toc_icon: "link"
+toc_sticky: true
 ---
 
 # Current Members
