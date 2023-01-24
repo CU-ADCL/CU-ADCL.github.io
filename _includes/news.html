@@ -5,8 +5,8 @@
       <!-- Skip the header -->
       {% endif %}
       <tr class="row1">
-        <td style="width:15%" class="col1">{{ row["Date"] | date_to_string}}</td>
-        <td>{{ row["Item"] | markdownify }}</td>
+        <td style="width:15%;padding:1em" class="col1">{{ row["Date"] | date_to_string}}</td>
+        <td>{{ row["Item"] | markdownify | remove: '<p>' | remove: '</p>'}}</td>
       </tr>
     {% endfor %}
 </table>
