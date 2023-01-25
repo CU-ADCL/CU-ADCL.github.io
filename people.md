@@ -51,24 +51,22 @@ toc_sticky: true
 <div class="person-section">
     <summary><b>Detailed Bio</b></summary>
     <div class="person-bio">
-        <p>{{ person.excerpt | markdownify }}</p>
+        <p>{{ person.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     </div>
 </div>
 {% else %}
 <div class="person-section">
-    <summary><b>Research Interests:</b> {{ person.research | markdownify }}</summary>
-<details>
-    <summary><b>Detailed Bio</b></summary>
-    <div class="person-bio">
-        <p>{{ person.excerpt | markdownify }}</p>
-    </div>
-</details>
-
+    {% if person.research != blank %}
+    <summary><b>Research Interests:</b> {{ person.research | markdownify | remove: '<p>' | remove: '</p>' }}</summary>
+    {% endif %}
+    <details>
+        <summary><b>Detailed Bio</b></summary>
+        <div class="person-bio">
+            <p>{{ person.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        </div>
+    </details>
 </div>
 {% endif %}
-<!-- <div class="person-bio">
-    <p>{{ person.excerpt | markdownify }}</p>
-</div> -->
 </div>
 {% endif %}
 {% endfor %}
