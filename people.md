@@ -47,14 +47,6 @@ toc_sticky: true
     <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
 </div>
 </div>
-{% if person.program == "Faculty Member" %}
-<div class="person-section">
-    <summary><b>Detailed Bio</b></summary>
-    <div class="person-bio">
-        <p>{{ person.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-    </div>
-</div>
-{% else %}
 <div class="person-section">
     {% if person.research != blank %}
     <summary><b>Research Interests:</b> {{ person.research | markdownify | remove: '<p>' | remove: '</p>' }}</summary>
@@ -66,7 +58,6 @@ toc_sticky: true
         </div>
     </details>
 </div>
-{% endif %}
 </div>
 {% endif %}
 {% endfor %}
