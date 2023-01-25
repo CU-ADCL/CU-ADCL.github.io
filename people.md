@@ -47,13 +47,33 @@ toc_sticky: true
     <a href="mailto:{{ person.email }}">{{ person.email }}</a></p>
 </div>
 </div>
-<div class="person-bio">
-    <p>{{ person.excerpt | markdownify }}</p>
+{% if person.program == "Faculty Member" %}
+<div class="person-section">
+    <summary><b>Detailed Bio</b></summary>
+    <div class="person-bio">
+        <p>{{ person.excerpt | markdownify }}</p>
+    </div>
 </div>
+{% else %}
+<div class="person-section">
+    <summary><b>Research Interests:</b> {{ person.research | markdownify }}</summary>
+<details>
+    <summary><b>Detailed Bio</b></summary>
+    <div class="person-bio">
+        <p>{{ person.excerpt | markdownify }}</p>
+    </div>
+</details>
+
+</div>
+{% endif %}
+<!-- <div class="person-bio">
+    <p>{{ person.excerpt | markdownify }}</p>
+</div> -->
 </div>
 {% endif %}
 {% endfor %}
 {% endfor %}
+<br>
 
 # Alumni
 
@@ -80,10 +100,13 @@ toc_sticky: true
 {{ person.name }}
 {% endif %}
 </h4>
-    <p>{{ person.program }}<br>
-    Position after ADCL: {{ person.first-destination }}</p>
+<p>{{ person.program }}</p>
 </div>
 </div>
+<div class="person-section">
+    <p><b>Position after ADCL</b>: <br>{{ person.first-destination }}</p>
+</div>
+
 </div>
 {% endif %}
 {% endfor %}
