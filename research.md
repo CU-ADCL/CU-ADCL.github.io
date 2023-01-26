@@ -81,6 +81,14 @@ For example, in the light-dark example above, POMCP (left) cannot decide to loca
 
 ## Applications and Extensions
 
+### Ecological Navigation
+![Ecology alt centered](/assets/images/overview-econav.jpeg)
+
+Ecological management problems often involve navigating from an initial to a desired community state. We showed that navigation between states is an equivalent problem to searching for lowest-cost sequences of actions that comprise direct and shortcut paths. Shortcuts can be obtained by using small sequential abundance perturbations (e.g. low-density introductions) and environment perturbations to nudge communities between states. Our work suggests that brute-force approaches to navigation like antibiotics or clearcutting may have realistic and less impactful alternatives.
+
+- [Navigation between initial and desired community states using shortcuts](https://arxiv.org/abs/2204.07629), Blonder et al. (2023), In _Ecology Letters_.
+
+
 ### Behavior-Aware Autonomous Driving
 ![Internal States alt split](/assets/images/states.svg.png)
 ![Safety-Efficiency Tradeoff alt split](/assets/images/pareto.png)
