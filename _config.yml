@@ -66,7 +66,7 @@ collections:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
 title: "Autonomous Decision and Control Lab" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/ADCL.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/ADCL-rounded.svg" # Site logo, also used in jekyll-seo-tag
 description: "Autonomous Decision and Control Lab" # Site description and default description, also used in jekyll-seo-tag
 url: "https://www.cu-adcl.org/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
