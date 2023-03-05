@@ -32,7 +32,8 @@ Our research focuses on artificial intelligence for controlling complex systems.
 
 The best way to view our most up-to-date research is to look at our [Publications page](/publications). Brief descriptions of some of our projects can be found below.
 
-<iframe src="https://adcl.slides.com/zacharysunberg/adcl-summary/embed?style=light" width="576" height="420" title="ADCL Summary" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<!--Below doesn't appear to work unfortunately-->
+<iframe src="https://adcl.slides.com/zacharysunberg/adcl-summary/embed?style=light" width="576" height="420" title="ADCL Summary"></iframe>
 
 ## Theoretical Foundations
 ### Optimality of POMDP Approximations
