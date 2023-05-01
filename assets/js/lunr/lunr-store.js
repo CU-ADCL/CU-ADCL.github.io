@@ -1,6 +1,6 @@
 var store = [{
         "title": "Ben",
-        "excerpt":"Hi, I’m Ben. I’m currently pursuing my interest in flight as a PhD student in aerospace engineering at the University of Colorado Boulder. I completed my bachelor’s degree in mechanical engineering at George Fox University, outside Portland, Oregon. My current research interests center around the development of autonomous systems for...","categories": [],
+        "excerpt":"Hi, I’m Ben. I’m currently pursuing my interest in flight as a PhD student in aerospace engineering at the University of Colorado Boulder. I completed my bachelor’s degree in mechanical engineering at George Fox University, outside Portland, Oregon. My current research interests center around explainable decision making under uncertainty and...","categories": [],
         "tags": [],
         "url": "/people/ben/",
         "teaser": null
