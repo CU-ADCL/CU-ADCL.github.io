@@ -1,6 +1,6 @@
 ---
-title: People 
-layout: splash 
+title: People
+layout: single 
 
 header:
     overlay_image: "assets/images/adcl-group.jpg"
