@@ -1,6 +1,10 @@
 ---
 title: People 
-layout: single 
+layout: splash 
+
+header:
+    overlay_image: "assets/images/adcl-group.jpg"
+
 permalink: /people/
 class: people
 toc: true
