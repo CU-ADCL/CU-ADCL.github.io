@@ -30,10 +30,9 @@ img[alt$="centered"] {
 
 Our research focuses on artificial intelligence for controlling complex systems. We usually focus on autonomous aerospace systems, from space probes to drones to telescopes for tracking space debris, but we have also worked on other systems including ecological communities and autonomous cars. The theme that unites all of our research is **uncertainty**. This could be uncertainty in the system's parameters or states or in how other people, systems, or the environment will interact with it. We approach our research from many perspectives, ranging from pure mathematical theory to numerical simulation to hardware experiments. The mathematical formalisms that we most often use are the partially observable Markov decision process (POMDP) for stochastic uncertainty, or various game formalisms when the uncertainty is worst case or introduced by other rational agents. One of our most important specialties is developing online tree search algorithms for POMDPs, and we are one of the world's leading centers of development for this approach.
 
-The best way to view our most up-to-date research is to look at our [Publications page](/publications). Brief descriptions of some of our projects can be found below.
+The best way to view our most up-to-date research is to look at our [Publications page](/publications). Some slides and brief descriptions of some of our projects can be found below. (If you cannot see the slides, make sure to disable all add blockers.)
 
-<!--Below doesn't appear to work unfortunately-->
-<iframe src="https://adcl.slides.com/zacharysunberg/adcl-summary/embed?style=light" width="576" height="420" title="ADCL Summary"></iframe>
+<iframe src="https://adcl.slides.com/zacharysunberg/adcl-summary/embed?style=light" width="100%" style="aspect-ratio:16/9" allowfullscreen title="ADCL Summary"></iframe>
 
 ## Theoretical Foundations
 ### Optimality of POMDP Approximations
