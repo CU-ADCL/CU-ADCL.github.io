@@ -3,7 +3,7 @@ name: Michael H. Lim
 start-year: 2019
 email: michaelhlim@berkeley.edu
 program: PhD Student
-status: current
+status: former
 picture: /assets/images/michael_lim.jpg
 picture-link: https://www.linkedin.com/in/michaelhlim/
 header-link: https://www.linkedin.com/in/michaelhlim/
