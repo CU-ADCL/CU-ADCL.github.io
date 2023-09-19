@@ -1,7 +1,7 @@
 ---
 name: Tyler Becker
 start-year: 2020
-email: Tyler.Becker@colorado.edu
+email: Tyler.Becker-1@colorado.edu
 program: PhD Student
 status: current
 picture: /assets/images/tyler_becker.png
