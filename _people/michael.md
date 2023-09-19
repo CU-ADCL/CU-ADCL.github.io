@@ -8,6 +8,7 @@ picture: /assets/images/michael_lim.jpg
 picture-link: https://www.linkedin.com/in/michaelhlim/
 header-link: https://www.linkedin.com/in/michaelhlim/
 research: POMDPs, Statistical Learning, Computer Vision, Robotics, Ecology
+first-destination: AI Scientist at C3.ai
 ---
 
 I am a PhD student in Electrical Engineering and Computer Sciences - Control, Intelligent Systems, and Robotics (CIR) at UC Berkeley, grateful to be advised by Profs. Claire J. Tomlin and Zachary N. Sunberg. I am interested in developing autonomous systems and architectures that integrate learning, control, and planning to enable physical robots to operate intelligently, safely, and efficiently, with provable guarantees. Currently, my research approaches include:
