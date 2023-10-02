@@ -36,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Qiheng",
-        "excerpt":"Hey there! I’m Qi Heng, a first year PhD student at CU Boulder. My research interests include sequential decision making under uncertainty, formal synthesis for robotics, and the intersection of these fields. I am especially interested in understanding how we can develop time and safety-critical autonomous systems that perform reliably...","categories": [],
+        "excerpt":"Hey there! I’m Qi Heng, a PhD student at CU Boulder. My research interests include sequential decision making under uncertainty, formal synthesis for robotics, and the intersection of these fields. I am especially interested in understanding how we can develop time and safety-critical autonomous systems that perform reliably with behavioral...","categories": [],
         "tags": [],
         "url": "/people/qiheng/",
         "teaser": null
