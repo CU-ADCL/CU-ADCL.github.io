@@ -1,0 +1,16 @@
+.page {
+  float: left;
+  width: 100%;
+}
+img[alt$="split"] { 
+  width: 48%; 
+  height: auto;
+  margin: auto;
+}
+img[alt$="centered"] {
+  display: block;
+  max-width: auto;
+  max-height: 250px;
+  margin: auto;
+  float: none!important;
+}
