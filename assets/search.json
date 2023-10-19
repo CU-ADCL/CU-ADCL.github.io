@@ -122,6 +122,13 @@
   },
   
   {
+    "title": "Publication Checklist",
+    "excerpt": "\n",
+    "content": "You can copy the markdown source for this page and edit it to keep track of your progress.\n\nBefore Submission\n\n\n  Make sure to understand all deadlines including abstract and final submission\n  Overleaf project title should include venue, e.g. ICRA 2024\n\n\n(Optional/Conditional)\n\n\n  Add entry to the top of unsubmitted.bib\n  Upload to arxiv. Check to see if the venue has any special policies about arxiv.\n\n\nAfter Submission\n\n\n  Add new entry to the top of our-pubs.bib:\n    \n      Add the extra field note={Under review}\n      Add a field annotating which authors are lab members (this helps for proposals). If the first and second authors are students and Zach is the fourth author, you would use author+an={1=student;2=student;4=zach}.\n      Remove old entry from unsubmitted.bib\n    \n  \n\n\nAfter Acceptance\n\n\n  Update entry in our-pubs.bib by removing the under/review\n  Add entry to news.csv\n\n\nAfter Final Camera-Ready Submission\n\n\n  Update arxiv to match submission and with proper links to the published article.\n\n",
+    "url": "/posts/publication-checklist/"
+  },
+  
+  {
     "title": "Publications",
     "excerpt": "\n",
     "content": "Publications\n\n\n\n",
@@ -138,7 +145,7 @@
   {
     "title": "Resources",
     "excerpt": "\n",
-    "content": "This page contains a list of resources that we maintain for students in the ADCL and the broader community.\n\nOpen Source Software\n\n\n  POMDPs.jl An interface for defining, solving, and simulating fully and partially observable Markov decision processes on discrete and continuous spaces.\n\n\nCourse list\n\nWe maintain a list of courses related to AI and Robotics at CU Boulder: CU Boulder AI and Robotics Classes\n\nOther tips and advice\n\n\n  Writing Tips\n\n",
+    "content": "This page contains a list of resources that we maintain for students in the ADCL and the broader community.\n\nOpen Source Software\n\n\n  POMDPs.jl An interface for defining, solving, and simulating fully and partially observable Markov decision processes on discrete and continuous spaces.\n\n\nCourse list\n\nWe maintain a list of courses related to AI and Robotics at CU Boulder: CU Boulder AI and Robotics Classes\n\nOther tips and advice\n\n\n  Writing Tips\n\n\nLab policies and procedures\n\n\n  Publication Checklist\n\n",
     "url": "/resources/"
   },
   

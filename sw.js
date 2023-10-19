@@ -1,8 +1,8 @@
-const version = '20231019100022';
+const version = '20231019104200';
 const cacheName = `static::${version}`;
 
 const buildContentBlob = () => {
-  return ["/","/assets/css/main.css","/manifest.json","/people/","/publications/","/research/","/resources/","/assets/search.json","/assets/styles.css","/posts/writing/","/assets/js/lunr/lunr-en.js","/assets/js/lunr/lunr-gr.js","/assets/js/lunr/lunr-store.js","/redirects.json","/sitemap.xml","/robots.txt","/feed.xml","/assets/logos/ADCL-rounded.svg", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
+  return ["/","/assets/css/main.css","/manifest.json","/people/","/posts/publication-checklist/","/publications/","/research/","/resources/","/assets/search.json","/assets/styles.css","/posts/writing/","/assets/js/lunr/lunr-en.js","/assets/js/lunr/lunr-gr.js","/assets/js/lunr/lunr-store.js","/redirects.json","/sitemap.xml","/robots.txt","/feed.xml","/assets/logos/ADCL-rounded.svg", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
   ]
 }
 
