@@ -18,3 +18,7 @@ We maintain a list of courses related to AI and Robotics at CU Boulder: [CU Boul
 ## Other tips and advice
 
 - [Writing Tips](/posts/writing)
+
+## Lab policies and procedures
+
+- [Publication Checklist](/posts/publication-checklist)
