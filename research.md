@@ -15,52 +15,18 @@ The best way to view our most up-to-date research is to look at our [Publication
 
 <iframe src="https://adcl.slides.com/zacharysunberg/adcl-summary/embed?style=light" width="100%" style="aspect-ratio:16/9" allowfullscreen title="ADCL Summary"></iframe>
 
-## Theoretical Foundations
-### Optimality of POMDP Approximations
-![Particle Belief MDP alt centered](/assets/images/pomdp-pb-mdp-2.png)
-
-Partially observable Markov decision processes (POMDPs) provide a flexible representation for real-world decision and control problems. However, POMDPs are notoriously difficult to solve, especially when the state and observation spaces are continuous or hybrid, which is often the case for physical systems. We present a general theory characterizing the approximation error of the practically effective particle filtering techniques that many recent online sampling-based POMDP algorithms use.
-
-- [Optimality Guarantees for Particle Belief Approximation of POMDPs](https://arxiv.org/abs/2210.05015), Lim et al. (2022), Pre-print.
-
-### POMDP Algorithms with Theoretical Guarantees
-<!-- ![POWSS alt split](/assets/images/powss_D2.png) -->
-![VPW alt centered](/assets/images/vpw.png)
-
-Recent online sampling-based algorithms that use techniques such as observation likelihood weighting and have shown unprecedented effectiveness in domains with continuous observation and action spaces. This line of work offers theoretical justifications of these techniques, proving that our new algorithms that utilize these techniques will estimate Q-values accurately with high probability and can be made to perform arbitrarily near the optimal solution by increasing computational power.
-
-- [Voronoi Progressive Widening: Efficient Online Solvers for Continuous State, Action, and Observation POMDPs](https://ieeexplore.ieee.org/abstract/document/9683490), Lim et al. (2021), In the proceedings of _IEEE Conference on Decision and Control (CDC)_.
-- [Sparse tree search optimality guarantees in POMDPs with continuous observation spaces](https://arxiv.org/abs/1910.04332), Lim et al. (2020), In the proceedings of _International Joint Conferences on Artificial Intelligence (IJCAI)_.
-
-
-
-
-
-
-## Algorithmic Developments
-
-### Practical POMDP algorithms
-
-![POMCPOW Tree alt centered](/assets/images/pomcpow.png)
-
-Leading online partially observable Markov decision process (POMDP) solvers such as POMCP and DESPOT can handle continuous state spaces, but they still struggle with continuous action and observation spaces.
-In fact, it can be shown analytically that they will converge to suboptimal solutions for some POMDPs with continuous action spaces regardless of the amount of computation.
-In this line of work, we propose novel POMDP algorithms that overcome these problems using techniques such as progressive widening and weighted particle filtering. 
-
-![Light-dark bad alt split](/assets/images/ld_bad.gif)![Light-dark good alt split](/assets/images/ld_good.gif)
-
-For example, in the light-dark example above, POMCP (left) cannot decide to localize in the light region, while our new algorithm **POMCPOW** (right) can, allowing it to hit the target at the origin much more quickly.
-
-- [Voronoi Progressive Widening: Efficient Online Solvers for Continuous State, Action, and Observation POMDPs](https://ieeexplore.ieee.org/abstract/document/9683490), Lim et al. (2021), In the proceedings of _IEEE Conference on Decision and Control (CDC)_.
-- [Online algorithms for POMDPs with continuous state, action, and observation spaces](https://arxiv.org/abs/1709.06196), Sunberg and Kochenderfer (2018), In the proceedings of _International Conference on Automated Planning and Scheduling (ICAPS)_.
-
-
 
 
 
 
 
 ## Applications and Extensions
+
+### Search and Rescue
+
+Autonomous aircraft have the potential to vastly improve our ability to undertake remote sensing tasks such as search and rescue and wildfire monitoring. However, autonomous systems may not have the contextual knowledge that human expert operators have. We're partnering with the [COHRINT Lab]( https://cohrint.info/) to integrate our intelligent [POMDP planners](#practical-pomdp-algorithms) with input from an operator to improve search and rescue.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d582HlUscaM?si=YrakeZ17ngKJDaHy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Ecological Navigation
 ![Ecology alt centered](/assets/images/overview-econav.jpeg)
@@ -101,3 +67,54 @@ Note that the pilot releases control as he turns off the motor.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mAFeDq9ZdH4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 - [A Real-Time Expert Control System For Helicopter Autorotation](http://www.ingentaconnect.com/content/ahs/jahs/2015/00000060/00000002/art00008), Sunberg et al. (2015), In _Journal of the American Helicopter Society_.
+
+
+
+
+
+
+## Theoretical Foundations
+### Optimality of POMDP Approximations
+![Particle Belief MDP alt centered](/assets/images/pomdp-pb-mdp-2.png)
+
+Partially observable Markov decision processes (POMDPs) provide a flexible representation for real-world decision and control problems. However, POMDPs are notoriously difficult to solve, especially when the state and observation spaces are continuous or hybrid, which is often the case for physical systems. We present a general theory characterizing the approximation error of the practically effective particle filtering techniques that many recent online sampling-based POMDP algorithms use.
+
+- [Optimality Guarantees for Particle Belief Approximation of POMDPs](https://jair.org/index.php/jair/article/view/14525), Lim et al. (2023), Journal of Artificial Intelligence Research (JAIR).
+
+### POMDP Algorithms with Theoretical Guarantees
+<!-- ![POWSS alt split](/assets/images/powss_D2.png) -->
+![VPW alt centered](/assets/images/vpw.png)
+
+Recent online sampling-based algorithms that use techniques such as observation likelihood weighting and have shown unprecedented effectiveness in domains with continuous observation and action spaces. This line of work offers theoretical justifications of these techniques, proving that our new algorithms that utilize these techniques will estimate Q-values accurately with high probability and can be made to perform arbitrarily near the optimal solution by increasing computational power.
+
+- [Voronoi Progressive Widening: Efficient Online Solvers for Continuous State, Action, and Observation POMDPs](https://ieeexplore.ieee.org/abstract/document/9683490), Lim et al. (2021), In the proceedings of _IEEE Conference on Decision and Control (CDC)_.
+- [Sparse tree search optimality guarantees in POMDPs with continuous observation spaces](https://arxiv.org/abs/1910.04332), Lim et al. (2020), In the proceedings of _International Joint Conferences on Artificial Intelligence (IJCAI)_.
+
+
+
+
+
+## Algorithmic Developments
+
+### Practical POMDP algorithms
+
+![POMCPOW Tree alt centered](/assets/images/pomcpow.png)
+
+Leading online partially observable Markov decision process (POMDP) solvers such as POMCP and DESPOT can handle continuous state spaces, but they still struggle with continuous action and observation spaces.
+In fact, it can be shown analytically that they will converge to suboptimal solutions for some POMDPs with continuous action spaces regardless of the amount of computation.
+In this line of work, we propose novel POMDP algorithms that overcome these problems using techniques such as progressive widening and weighted particle filtering. 
+
+![Light-dark bad alt split](/assets/images/ld_bad.gif)![Light-dark good alt split](/assets/images/ld_good.gif)
+
+For example, in the light-dark example above, POMCP (left) cannot decide to localize in the light region, while our new algorithm **POMCPOW** (right) can, allowing it to hit the target at the origin much more quickly.
+
+- [Voronoi Progressive Widening: Efficient Online Solvers for Continuous State, Action, and Observation POMDPs](https://ieeexplore.ieee.org/abstract/document/9683490), Lim et al. (2021), In the proceedings of _IEEE Conference on Decision and Control (CDC)_.
+- [Online algorithms for POMDPs with continuous state, action, and observation spaces](https://arxiv.org/abs/1709.06196), Sunberg and Kochenderfer (2018), In the proceedings of _International Conference on Automated Planning and Scheduling (ICAPS)_.
+
+
+
+
+
+
+
+
