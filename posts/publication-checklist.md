@@ -18,6 +18,8 @@ You can copy the [markdown source](https://github.com/CU-ADCL/CU-ADCL.github.io/
 ### (Optional/Conditional)
 
 - [ ] Add entry to the top of [unsubmitted.bib](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/unsubmitted.bib)
+    - The entry type should be `@unsubmitted`
+    - In the `note` field, add the words "In preparation" and indicate the expected submission date and venue
 - [ ] Upload to [arxiv](arxiv.org). Check to see if the venue has any special policies about arxiv.
 
 ## After Submission
