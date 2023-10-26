@@ -115,17 +115,23 @@
             <!--Autonomous Decision and Control Lab-->
           
         </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
+        <ul class="visible-links">
+<li class="masthead__menu-item">
               <a href="/">Home</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/research/">Research</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/publications/">Publications</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/people/">People</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/resources/">Resources</a>
-            </li></ul>
+            </li>
+</ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -168,8 +174,16 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-link"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#before-submission">Before Submission</a><ul><li><a href="#optionalconditional">(Optional/Conditional)</a></li></ul></li><li><a href="#after-submission">After Submission</a></li><li><a href="#after-acceptance">After Acceptance</a></li><li><a href="#after-final-camera-ready-submission">After Final Camera-Ready Submission</a></li></ul>
+              <header><h4 class="nav__title">
+<i class="fas fa-link"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li>
+<a href="#before-submission">Before Submission</a><ul><li><a href="#optionalconditional">(Optional/Conditional)</a></li></ul>
+</li>
+<li><a href="#after-submission">After Submission</a></li>
+<li><a href="#after-acceptance">After Acceptance</a></li>
+<li><a href="#after-final-camera-ready-submission">After Final Camera-Ready Submission</a></li>
+</ul>
 
             </nav>
           </aside>
@@ -179,25 +193,41 @@
 <h2 id="before-submission">Before Submission</h2>
 
 <ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Make sure to understand all deadlines including abstract and final submission</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Overleaf project title should include venue, e.g. ICRA 2024</li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Make sure to understand all deadlines including abstract and final submission</li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Overleaf project title should include venue, e.g. ICRA 2024</li>
 </ul>
 
 <h3 id="optionalconditional">(Optional/Conditional)</h3>
 
 <ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add entry to the top of <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/unsubmitted.bib">unsubmitted.bib</a></li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Upload to <a href="arxiv.org">arxiv</a>. Check to see if the venue has any special policies about arxiv.</li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Add entry to the top of <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/unsubmitted.bib">unsubmitted.bib</a>
+    <ul>
+      <li>The entry type should be <code class="language-plaintext highlighter-rouge">@unsubmitted</code>
+</li>
+      <li>In the <code class="language-plaintext highlighter-rouge">note</code> field, add the words “In preparation” and indicate the expected submission date and venue</li>
+    </ul>
+  </li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Upload to <a href="arxiv.org">arxiv</a>. Check to see if the venue has any special policies about arxiv.</li>
 </ul>
 
 <h2 id="after-submission">After Submission</h2>
 
 <ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add new entry to the top of <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/our-pubs.bib">our-pubs.bib</a>:
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Add new entry to the top of <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/our-pubs.bib">our-pubs.bib</a>:
     <ul class="task-list">
-      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add the extra field <code class="language-plaintext highlighter-rouge">note={Under review}</code></li>
-      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add a field annotating which authors are lab members (this helps for proposals). If the first and second authors are students and Zach is the fourth author, you would use <code class="language-plaintext highlighter-rouge">author+an={1=student;2=student;4=zach}</code>.</li>
-      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Remove old entry from <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/unsubmitted.bib">unsubmitted.bib</a></li>
+      <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Add the extra field <code class="language-plaintext highlighter-rouge">note={Under review}</code>
+</li>
+      <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Add a field annotating which authors are lab members (this helps for proposals). If the first and second authors are students and Zach is the fourth author, you would use <code class="language-plaintext highlighter-rouge">author+an={1=student;2=student;4=zach}</code>.</li>
+      <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Remove old entry from <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/unsubmitted.bib">unsubmitted.bib</a>
+</li>
     </ul>
   </li>
 </ul>
@@ -205,14 +235,18 @@
 <h2 id="after-acceptance">After Acceptance</h2>
 
 <ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update entry in <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/our-pubs.bib">our-pubs.bib</a> by removing the under/review</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add entry to <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/_data/news.csv">news.csv</a></li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Update entry in <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/our-pubs.bib">our-pubs.bib</a> by removing the under/review</li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Add entry to <a href="https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/_data/news.csv">news.csv</a>
+</li>
 </ul>
 
 <h2 id="after-final-camera-ready-submission">After Final Camera-Ready Submission</h2>
 
 <ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update arxiv to match submission and with proper links to the published article.</li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>Update arxiv to match submission and with proper links to the published article.</li>
 </ul>
 
         
@@ -261,7 +295,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Autonomous Decision and Control Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">© 2023 Autonomous Decision and Control Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
