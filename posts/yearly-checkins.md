@@ -18,17 +18,19 @@ Note that you can just paste this into slides.com [here](https://adcl.slides.com
 
 ```markdown
 ## Accomplishments in the last year
-- Papers submitted and published
-- Conferences and workshops attended
-- Courses taken
-- Internships
-- TA/TF positions
-- Other activities such as mentoring, reviewing, and outreach
-- Anything else that you're proud of
+- Do you feel you made good progress in your PhD program this year?
+- Summarize the following accomplishments
+  - Research discoveries/conclusions
+  - Papers submitted and published
+  - Conferences and workshops attended
+  - Courses taken
+  - Internships
+  - TA/TF positions
+  - Other activities such as mentoring, reviewing, and outreach
 
 ---
 
-## Challenges/disappointments in the last year [OPTIONAL]
+## Challenges/disappointments in the last year
 - Any challenges that have made it difficult to progress in your PhD that you would like to discuss with me
 - Any aspects of your PhD that you feel negative about and would like to discuss with me
 
@@ -39,16 +41,23 @@ Note that you can just paste this into slides.com [here](https://adcl.slides.com
 - What publications do you expect to submit and when?
 - How many classes will you take?
 - Do you expect to take on any other significant responsibilities? (Make sure to indicate the relative priorities of this and the items above)
-- How do you plan to address any challenges or disappointments you faced in the past year? [OPTIONAL]
+- How do you plan to address any challenges or disappointments you faced in the past year?
 - If you could work on any project at all, what would it be like? (is it hardware/computational/theoretical, etc.) (note: it is probably not possible to do this, but I want to optimize as much as possible)
 
 ---
 
-## Timeline and requirements
+## Timeline, requirements, and the future
 - List of the major PhD requirements from the handbook with indications of which ones you have satisfied (if someone wants to make a list here, please submit a PR, but try to keep things as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) as possible)
 - For the requirements you have not satisfied, when do you intend to satisfy them? (month/year)
+- What do you plan to do after your PhD?
 
 ---
 
-## Anything else that you'd like to talk about [OPTIONAL]
+## Advising relationship
+- Are our meetings and other interactions helpful to you?
+- Would you like me to do anything differently going forward?
+
+---
+
+## Anything else that you'd like to talk about
 ```
