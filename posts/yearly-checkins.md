@@ -10,7 +10,7 @@ toc_sticky: true
 
 The yearly check in is a time for us to review, reflect on, and communicate about your progress through the PhD.
 
-## Slide Show
+## Slide Deck
 
 In preparation, please prepare a slide deck using the outline below and send it to me at least 48 hours before our meeting so that I can review it.
 
@@ -40,6 +40,7 @@ Note that you can just paste this into slides.com [here](https://adcl.slides.com
 - How many classes will you take?
 - Do you expect to take on any other significant responsibilities? (Make sure to indicate the relative priorities of this and the items above)
 - How do you plan to address any challenges or disappointments you faced in the past year? [OPTIONAL]
+- If you could work on any project at all, what would it be like? (is it hardware/computational/theoretical, etc.) (note: it is probably not possible to do this, but I want to optimize as much as possible)
 
 ---
 
