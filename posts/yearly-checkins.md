@@ -1,7 +1,7 @@
 ---
 title: Yearly Check-in Preparation 
 layout: single 
-permalink: /posts/yearly-check-in/
+permalink: /posts/yearly-checkin/
 class: resources
 toc: true
 toc_icon: "link"
