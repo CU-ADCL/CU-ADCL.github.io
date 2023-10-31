@@ -12,7 +12,7 @@ The yearly check in is a time for us to review, reflect on, and communicate abou
 
 ## Slide Deck
 
-In preparation, please prepare a slide deck using the outline below and send it to me at least 48 hours before our meeting so that I can review it.
+In preparation, please prepare a slide deck using the outline below and **send it to me at least 48 hours before our meeting** so that I can review it.
 
 Note that you can just paste this into slides.com [here](https://adcl.slides.com/tools/markdown-to-presentation) and it will automagically generate the slides so that you can fill them in.
 
