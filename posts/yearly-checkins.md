@@ -59,8 +59,9 @@ Note that you can just paste this into slides.com [here](https://adcl.slides.com
 ---
 
 ## Advising relationship
-- Are our meetings and other interactions helpful to you?
+- In what ways are our interactions most/least helpful?
 - Would you like me to do anything differently going forward?
+- Are there specific ways that I can push you to help you achieve your goals next year?
 
 ---
 
