@@ -1,5 +1,6 @@
 Date,Item
 
+2023-10-30,"Our paper on &quot;[Investigation of risk-aware MDP and POMDP contingency management autonomy for UAS](https://arxiv.org/abs/2304.01052)&quot; has been accepted for a journal publication in the Journal of Aerospace Information Systems"
 2023-10-27,"We published a new [Julia package](https://github.com/CU-ADCL/ProbabilisticRoadMap.jl) that can create a probabilistic roadmap (PRM) for any given environment."
 2023-09-28,"We published a new [Julia package](https://github.com/CU-ADCL/HybridAStar.jl) that implements the Hybrid A* algorithm."
 2023-08-21,"The ADCL will be part of a major new [effort](https://www.colorado.edu/aerospace/2023/08/21/cu-boulder-wins-major-air-force-grant-track-objects-orbiting-moon) to improve space domain awareness in cislunar space, collaborating with researchers at CU, Texas A&M, and Georgia Tech."

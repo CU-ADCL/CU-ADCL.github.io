@@ -47,15 +47,21 @@ Note that you can just paste this into slides.com [here](https://adcl.slides.com
 ---
 
 ## Timeline, requirements, and the future
-- List of the major PhD requirements from the handbook with indications of which ones you have satisfied (if someone wants to make a list here, please submit a PR, but try to keep things as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) as possible)
+- List of the major PhD requirements from the handbook with indications of which ones you have satisfied
+  - Course Credits
+  - [Preliminary Exam](https://www.colorado.edu/aerospace/academics/graduates/phd-advising#expand-98405)
+  - [Doctoral Practicum](https://www.colorado.edu/aerospace/academics/graduates/phd-advising#expand-15640)
+  - [Comprehensive Exam](https://www.colorado.edu/aerospace/academics/graduates/phd-advising#expand-61455)
+  - [Defense](https://www.colorado.edu/aerospace/academics/graduates/phd-advising#expand-58994)
 - For the requirements you have not satisfied, when do you intend to satisfy them? (month/year)
 - What do you plan to do after your PhD?
 
 ---
 
 ## Advising relationship
-- Are our meetings and other interactions helpful to you?
+- In what ways are our interactions most/least helpful?
 - Would you like me to do anything differently going forward?
+- Are there specific ways that I can push you to help you achieve your goals next year?
 
 ---
 
