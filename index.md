@@ -12,6 +12,4 @@ excerpt: We study and develop autonomy with an uncertainty-first approach.
 
 You can find out more about the ADCL using the [Research](research), [Publications](publications), and [People](people) links above. Our group meetings are open to the public. Join our [mailing list](https://groups.google.com/a/colorado.edu/g/aeroengr-gg-adcl-meetings) for weekly emails with group meeting details.
 
-**We are currently seeking a U.S. Citizen POSTDOCTORAL SCHOLAR to work on sensor tasking for space domain awareness as part of our new [project](https://www.colorado.edu/aerospace/2023/08/21/cu-boulder-wins-major-air-force-grant-track-objects-orbiting-moon). Please email zachary.sunberg [at] colorado.edu with a cv listing your expirience with orbital mechanics and planning under uncertainty if you are interested.**
-
-{%include news.html %}
+{% include news.html %}
