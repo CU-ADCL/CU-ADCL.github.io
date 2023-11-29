@@ -19,6 +19,9 @@ In order to access ADCL servers, follow the steps below.
 
 To setup remote connections in VS Code, complete the above steps if you haven't already set up remote access and install the [Remote-SSH extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and follow the steps [here](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host). Note the VPN must be connected to use remote access in VSCode.
 
+### Session Management
+Use [htop](https://linux.die.net/man/1/htop) to keep track of which system resources are being used and by whom. This is especially important to avoid running multiple resource intesive processes at once. If there are current procecsses using many resources, check with the owner before starting additional processes to avoid interfering with each other's processes.
+
 ### Persisent Sessions
 [Tmux](https://manpages.ubuntu.com/manpages/xenial/en/man1/tmux.1.html) is useful for keeping remote processes running without requiring an active connection to the server. See [this tutorial](https://linuxize.com/post/getting-started-with-tmux/) for more information. [Julia in VS Code](https://www.julia-vscode.org/docs/stable/userguide/remote/#Remote-Development) has documentation on enabling persistent sessions within VS Code with Tmux. **Please update the `Tmux Session Name` field to include your username to avoid naming conflicts.** See this [forum post](https://discourse.julialang.org/t/how-to-enable-and-use-persistent-remote-connection-with-vscode-tmux/76926/5) for details on how to end a Tmux Julia session in VSCode, as **this is different from the usual terminal behavior**.
 
