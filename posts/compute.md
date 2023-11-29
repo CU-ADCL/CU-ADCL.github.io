@@ -1,0 +1,29 @@
+---
+title: Lab Computing
+layout: single 
+permalink: /posts/compute/
+class: resources
+toc: true
+toc_icon: "link"
+toc_sticky: true
+---
+
+## Lab Computing Resources
+### Access
+In order to access ADCL servers, follow the steps below.
+
+1. Download and set up [CU's VPN](https://oit.colorado.edu/services/network-internet-services/vpn) if you haven't already.
+2. Connect to CU's network via the VPN.
+3. ssh into the server, generally with the following syntax: `<username>@<server_name>.colorado.edu` where `<username>` and `<server_name>` are replaced with your username and the name of the server being accessed.
+4. Enter your password and use the commandline interface as you would locally.
+
+To setup remote connections in VS Code, complete the above steps if you haven't already set up remote access and install the [Remote-SSH extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and follow the steps [here](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host). Note the VPN must be connected to use remote access in VSCode.
+
+### Persisent Sessions
+[Tmux](https://manpages.ubuntu.com/manpages/xenial/en/man1/tmux.1.html) is useful for keeping remote processes running without requiring an active connection to the server. See [this tutorial](https://linuxize.com/post/getting-started-with-tmux/) for more information. [Julia in VS Code](https://www.julia-vscode.org/docs/stable/userguide/remote/#Remote-Development) has documentation on enabling persistent sessions within VS Code with Tmux. **Please update the `Tmux Session Name` field to include your username to avoid naming conflicts.** See this [forum post](https://discourse.julialang.org/t/how-to-enable-and-use-persistent-remote-connection-with-vscode-tmux/76926/5) for details on how to end a Tmux Julia session in VSCode, as **this is different from the usual terminal behavior**.
+
+### Using Julia
+[Juliaup](https://github.com/JuliaLang/juliaup) is a Julia version manager. Installing this in your user folder ensures control over your Julia versions and packages. You may need to edit `~/.profile` to ensure the Juliaup path is at the top of the list if you have issues launching Julia with Juliaup.
+
+### Github
+Follow [instructions for SSH setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to enable cloning of private repositories.
