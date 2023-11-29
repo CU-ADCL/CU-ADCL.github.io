@@ -1,0 +1,266 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Lab Computing - Autonomous Decision and Control Lab</title>
+<meta name="description" content="Autonomous Decision and Control Lab">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Autonomous Decision and Control Lab">
+<meta property="og:title" content="Lab Computing">
+<meta property="og:url" content="https://www.cu-adcl.org//posts/compute/">
+
+
+  <meta property="og:description" content="Autonomous Decision and Control Lab">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://www.cu-adcl.org//posts/compute/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.cu-adcl.org//"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Autonomous Decision and Control Lab Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div style="height: 40px; padding: 10px;">
+  <a class="cu-logo" href="https://www.colorado.edu"><img src="/assets/images/cu.png" width="300" alt="University of Colorado Boulder"></a>
+</div>
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/logos/ADCL-rounded.svg" alt="Autonomous Decision and Control Lab"></a>
+        
+        <a class="site-title" href="/">
+            <!--Autonomous Decision and Control Lab-->
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/people/">People</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Lab Computing">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Lab Computing
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-link"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#lab-computing-resources">Lab Computing Resources</a><ul><li><a href="#access">Access</a></li><li><a href="#session-management">Session Management</a></li><li><a href="#persisent-sessions">Persisent Sessions</a></li><li><a href="#using-julia">Using Julia</a></li><li><a href="#github">Github</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="lab-computing-resources">Lab Computing Resources</h2>
+<h3 id="access">Access</h3>
+<p>In order to access ADCL servers, follow the steps below.</p>
+
+<ol>
+  <li>Download and set up <a href="https://oit.colorado.edu/services/network-internet-services/vpn">CU’s VPN</a> if you haven’t already.</li>
+  <li>Connect to CU’s network via the VPN.</li>
+  <li>ssh into the server, generally with the following syntax: <code class="language-plaintext highlighter-rouge">&lt;username&gt;@&lt;server_name&gt;.colorado.edu</code> where <code class="language-plaintext highlighter-rouge">&lt;username&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;server_name&gt;</code> are replaced with your username and the name of the server being accessed.</li>
+  <li>Enter your password and use the commandline interface as you would locally.</li>
+</ol>
+
+<p>To setup remote connections in VS Code, complete the above steps if you haven’t already set up remote access and install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote-SSH extension</a> and follow the steps <a href="https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host">here</a>. Note the VPN must be connected to use remote access in VSCode.</p>
+
+<h3 id="session-management">Session Management</h3>
+<p>Use <a href="https://linux.die.net/man/1/htop">htop</a> to keep track of which system resources are being used and by whom. This is especially important to avoid running multiple resource intesive processes at once. If there are current procecsses using many resources, check with the owner before starting additional processes to avoid interfering with each other’s processes.</p>
+
+<h3 id="persisent-sessions">Persisent Sessions</h3>
+<p><a href="https://manpages.ubuntu.com/manpages/xenial/en/man1/tmux.1.html">Tmux</a> is useful for keeping remote processes running without requiring an active connection to the server. See <a href="https://linuxize.com/post/getting-started-with-tmux/">this tutorial</a> for more information. <a href="https://www.julia-vscode.org/docs/stable/userguide/remote/#Remote-Development">Julia in VS Code</a> has documentation on enabling persistent sessions within VS Code with Tmux. <strong>Please update the <code class="language-plaintext highlighter-rouge">Tmux Session Name</code> field to include your username to avoid naming conflicts.</strong> See this <a href="https://discourse.julialang.org/t/how-to-enable-and-use-persistent-remote-connection-with-vscode-tmux/76926/5">forum post</a> for details on how to end a Tmux Julia session in VSCode, as <strong>this is different from the usual terminal behavior</strong>.</p>
+
+<h3 id="using-julia">Using Julia</h3>
+<p><a href="https://github.com/JuliaLang/juliaup">Juliaup</a> is a Julia version manager. Installing this in your user folder ensures control over your Julia versions and packages. You may need to edit <code class="language-plaintext highlighter-rouge">~/.profile</code> to ensure the Juliaup path is at the top of the list if you have issues launching Julia with Juliaup.</p>
+
+<h3 id="github">Github</h3>
+<p>Follow <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">instructions for SSH setup</a> to enable cloning of private repositories.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Autonomous Decision and Control Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
