@@ -2,7 +2,7 @@
 name: Ofer Dagan
 start-year: 2024
 email: ofer.dagan@colorado.edu
-program: Postdoctoral Scholar
+program: Postdoctoral Associate
 status: current
 picture: /assets/images/ofer_dagan.webp
 picture-link: 

@@ -15,7 +15,7 @@ toc_sticky: true
 
 # Current Members
 
-{% assign roles = "Faculty#Faculty Member&Postdocs#Postdoctoral Scholar&PhD Students#PhD Student&Master's Students#MS Student&Visiting Scholars#Visiting Scholar" | split: '&' %}
+{% assign roles = "Faculty#Faculty Member&Postdocs#Postdoctoral Associate&PhD Students#PhD Student&Master's Students#MS Student&Visiting Scholars#Visiting Scholar" | split: '&' %}
 
 {% assign sorted = site.people | sort: 'start-year' %}
 
