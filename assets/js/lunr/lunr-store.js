@@ -36,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Ofer",
-        "excerpt":"Newest member of the ADCL!  ","categories": [],
+        "excerpt":"I am a new postdoc at ADCL, starting January 2024. I hold a Ph.D. in aerospace engineering sciences from CU Boulder. Prior to coming to CU Boulder, I worked in an R&amp;D aerospace industry for about 10 years as a research engineer and team leader. I hold a B.S. degree...","categories": [],
         "tags": [],
         "url": "/people/ofer/",
         "teaser": null
