@@ -7,7 +7,7 @@ status: current
 picture: /assets/images/ofer_dagan.webp
 picture-link: 
 header-link: 
-research:
+research: Multi-robot systems, Sensor data fusion, Bayesian inference, Probabilistic graphical models, Decision making under uncertainty
 ---
 
 I am a new postdoc at ADCL, starting January 2024. I hold a Ph.D. in aerospace engineering sciences from CU Boulder. Prior to coming to CU Boulder, I worked in an R&D aerospace industry for about 10 years as a research engineer and team leader.
