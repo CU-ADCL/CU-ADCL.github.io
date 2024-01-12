@@ -5,8 +5,8 @@ email: ofer.dagan@colorado.edu
 program: Postdoctoral Associate
 status: current
 picture: /assets/images/ofer_dagan.webp
-picture-link: 
-header-link: 
+picture-link: https://oferdagan.wixsite.com/oferdagan
+header-link: https://oferdagan.wixsite.com/oferdagan
 research: Multi-robot systems, Sensor data fusion, Bayesian inference, Probabilistic graphical models, Decision making under uncertainty
 ---
 
