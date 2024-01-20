@@ -1,5 +1,6 @@
 Date,Item
 
+2024-01-19,"Our paper &quot;Cieran: Designing Sequential Colormaps with a Teachable Robot&quot; has been accepted to the Conference on Human Factors in Computing Systems (CHI) 2024."
 2023-11-16,"Our paper on &quot;[Sampling-based Reactive Synthesis for Nondeterministic Hybrid Systems](https://arxiv.org/abs/2304.06876)&quot; has been accepted for a journal publication in the Robotics and Automation Letters (RA-L)"
 2023-10-30,"Our paper on &quot;[Investigation of risk-aware MDP and POMDP contingency management autonomy for UAS](https://arxiv.org/abs/2304.01052)&quot; has been accepted for a journal publication in the Journal of Aerospace Information Systems"
 2023-10-27,"We published a new [Julia package](https://github.com/CU-ADCL/ProbabilisticRoadMap.jl) that can create a probabilistic roadmap (PRM) for any given environment."
