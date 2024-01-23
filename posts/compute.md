@@ -20,6 +20,8 @@ In order to access ADCL servers, follow the steps below.
 To setup remote connections in VS Code, complete the above steps if you haven't already set up remote access and install the [Remote-SSH extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) and follow the steps [here](https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host). Note the VPN must be connected to use remote access in VSCode.
 
 ### Session Management
+Use [users](https://linux.die.net/man/1/users) to see a list of currrently logged-in users.
+
 Use [htop](https://linux.die.net/man/1/htop) to keep track of which system resources are being used and by whom. This is especially important to avoid running multiple resource intesive processes at once. If there are current procecsses using many resources, check with the owner before starting additional processes to avoid interfering with each other's processes.
 
 Likewise, before generating or downloading large files, check that there is sufficient space on the machine and move (your) old files to the storage drive as needed to free up space. [ncdu](https://linux.die.net/man/1/ncdu) is a useful utility for seeing file/folder sizes of the current directory. Run this from `/home` or the root directory (`/`) to see additional disk usage information. [df](https://linux.die.net/man/1/df) (specifically `df -h`) is useful for [viewing disk partition use](https://www.geeksforgeeks.org/df-command-linux-examples/).
