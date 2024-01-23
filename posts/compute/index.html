@@ -188,6 +188,8 @@
 <p>To setup remote connections in VS Code, complete the above steps if you haven’t already set up remote access and install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh">Remote-SSH extension</a> and follow the steps <a href="https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host">here</a>. Note the VPN must be connected to use remote access in VSCode.</p>
 
 <h3 id="session-management">Session Management</h3>
+<p>Use <a href="https://linux.die.net/man/1/users">users</a> to see a list of currrently logged-in users.</p>
+
 <p>Use <a href="https://linux.die.net/man/1/htop">htop</a> to keep track of which system resources are being used and by whom. This is especially important to avoid running multiple resource intesive processes at once. If there are current procecsses using many resources, check with the owner before starting additional processes to avoid interfering with each other’s processes.</p>
 
 <p>Likewise, before generating or downloading large files, check that there is sufficient space on the machine and move (your) old files to the storage drive as needed to free up space. <a href="https://linux.die.net/man/1/ncdu">ncdu</a> is a useful utility for seeing file/folder sizes of the current directory. Run this from <code class="language-plaintext highlighter-rouge">/home</code> or the root directory (<code class="language-plaintext highlighter-rouge">/</code>) to see additional disk usage information. <a href="https://linux.die.net/man/1/df">df</a> (specifically <code class="language-plaintext highlighter-rouge">df -h</code>) is useful for <a href="https://www.geeksforgeeks.org/df-command-linux-examples/">viewing disk partition use</a>.</p>
