@@ -72,7 +72,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Zaki",
-        "excerpt":"Hi, I’m Zaki. I am a second year M.Sc. student in the Department of Aerospace Engineering at the University of Colorado Boulder. I received a B.Sc. in Aerospace Engineering also at CU Boulder. My current research revolves around a couple of projects within the domain of contingency management of UAS...","categories": [],
+        "excerpt":"Hi, I’m Zaki. I am a second-year Ph.D. student in the Department of Aerospace Engineering at the University of Colorado Boulder. I received a B.Sc. and M.Sc. in Aerospace Engineering also at CU Boulder. My current research revolves around planning and control under uncertainty. I have worked on contingency management...","categories": [],
         "tags": [],
         "url": "/people/zaki/",
         "teaser": null
