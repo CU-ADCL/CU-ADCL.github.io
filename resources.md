@@ -15,9 +15,10 @@ This page contains a list of resources that we maintain for students in the ADCL
 
 We maintain a list of courses related to AI and Robotics at CU Boulder: [CU Boulder AI and Robotics Classes](https://docs.google.com/spreadsheets/d/1-7LU1xVnkfJMTRTMNMyoVYBctCAsVx3-fXQbBtrRETk)
 
-## Other tips and advice
+## Other information, tips, and advice
 
 - [Writing Tips](/posts/writing)
+- [List of Conferences](/posts/conferences)
 
 ## Lab policies and procedures
 
