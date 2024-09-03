@@ -22,6 +22,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3
+
+      - run: bundle lock
       
       - name: Building the website 
         uses: limjh16/jekyll-action-ts@v2
