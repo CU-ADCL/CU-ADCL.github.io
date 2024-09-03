@@ -30,7 +30,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Lisa",
-        "excerpt":" ","categories": [],
+        "excerpt":"Hi, I’m Lisa. I am a PhD student in the Aerospace Engineering Department at CU Boulder. Currently, my research interests include human-autonomy teaming, risk management in partially observable environments with uncertainty, autonomous navigation to minimize risk, and optimizing human trust of collaborative autonomous systems. Prior to this, I earned a...","categories": [],
         "tags": [],
         "url": "/people/lisa/",
         "teaser": null
