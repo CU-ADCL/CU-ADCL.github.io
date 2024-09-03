@@ -28,8 +28,8 @@ jobs:
       
       - name: Building the website 
         uses: limjh16/jekyll-action-ts@v2
-        # with:
-        #   enable_cache: true
+        with:
+          enable_cache: true
 
       - name: 🚀 Deploying the website 
         uses: peaceiris/actions-gh-pages@v3
