@@ -5,7 +5,7 @@ permalink: /posts/conferences/
 class: resources
 ---
 
-To add more information, edit this file: https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/posts/conferences.md
+To add more information, edit this file: [https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/posts/conferences.md](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/posts/conferences.md)
 
 |Title|Usual Month|Usual Deadline|
 |-----|----|----|
