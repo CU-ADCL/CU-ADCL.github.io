@@ -29,6 +29,18 @@ var store = [{
         "url": "/people/juyeop/",
         "teaser": null
       },{
+        "title": "Lisa",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/people/lisa/",
+        "teaser": null
+      },{
+        "title": "Mark",
+        "excerpt":"Hi I’m Mark! I’m currently a PhD student in aerospace engineering at CU Boulder. I received my Bachelors in Aeronautical Engineering from the US Air Force Academy and my Master’s in the same from MIT. My research will hopefully focus upon better understanding the critical attributes and consequences of explainability...","categories": [],
+        "tags": [],
+        "url": "/people/mark/",
+        "teaser": null
+      },{
         "title": "Michael",
         "excerpt":"I am a PhD student in Electrical Engineering and Computer Sciences - Control, Intelligent Systems, and Robotics (CIR) at UC Berkeley, grateful to be advised by Profs. Claire J. Tomlin and Zachary N. Sunberg. I am interested in developing autonomous systems and architectures that integrate learning, control, and planning to...","categories": [],
         "tags": [],
