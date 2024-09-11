@@ -26,3 +26,4 @@ We maintain a list of courses related to AI and Robotics at CU Boulder: [CU Boul
 - [Yearly Check-in Instructions](/posts/yearly-checkin)
 - [Lab Computing](/posts/compute)
 - Lab logos can be found in the [`logo` github repo](https://github.com/CU-ADCL/logo)
+- [Lab Meeting Schedule](https://docs.google.com/spreadsheets/d/15DUqLfdq_4KFspzIKzG-ozy_ommIPpxvzgh39k5tyMg/edit?gid=0#gid=0)
