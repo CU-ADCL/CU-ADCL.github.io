@@ -12,7 +12,7 @@ You can copy the [markdown source](https://github.com/CU-ADCL/CU-ADCL.github.io/
 
 ## Pre-Submission Schedule
 
-The schedule below is a target for the weeks leading up to a conference or journal with a deadline on day **D** (i.e. D-14 indicates 14 days before the deadline). I expect this schedule to be comfortable for an advanced PhD student who already has the initial experiments completed.
+The schedule below is a target for the weeks leading up to a conference or journal with a deadline on **D-day** (i.e. D-14 indicates 14 days before the deadline). I expect this schedule to be comfortable for an advanced PhD student who already has the initial experiments completed.
 New students may want to extend the target times because each of the tasks will take them longer.
 
 This schedule may slip a bit, and this is normal. However, if the schedule slips by 50% (i.e. the D-28 tasks are not completed before D-14), we will call off the submission and wait for the next conference.
