@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Dynamics Materials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tree-view {
+            line-height: 1.5;
+        }
+        .tree-item {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        .tree-item ul {
+            margin-left: 20px;
+            padding-left: 0;
+            border-left: 1px solid #ddd;
+        }
+        .tree-item li {
+            margin: 2px 0;
+            padding: 2px 0 2px 20px;
+            position: relative;
+        }
+        .tree-item li:hover {
+            background-color: #f0f0f0;
+        }
+        .tree-item .arrow {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+        }
+        .tree-item .arrow::before {
+            content: "▶";
+            font-size: 10px;
+            color: #666;
+            transition: transform 0.2s;
+        }
+        .tree-item .arrow.expanded::before {
+            transform: rotate(90deg);
+        }
+        .tree-item .no-arrow {
+            padding-left: 20px;
+        }
+        .folder-icon::before {
+            content: "📁";
+            margin-right: 5px;
+        }
+        .folder-icon.expanded::before {
+            content: "📂";
+        }
+        .file-icon::before {
+            content: "📄";
+            margin-right: 5px;
+        }
+        .tree-item a {
+            color: #2962ff;
+            text-decoration: none;
+        }
+        .tree-item a:hover {
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+        #loading {
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: #666;
+        }
+        .error {
+            color: #d32f2f;
+            padding: 10px;
+            border: 1px solid #ffcdd2;
+            border-radius: 4px;
+            background-color: #ffebee;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aircraft Dynamics Materials</h1>
+        <div id="loading">Loading repository structure...</div>
+        <div id="file-tree" class="tree-view"></div>
+    </div>
+
+    <script>
+        const owner = 'zsunberg';
+        const repo = 'Aircraft-Dynamics-Materials';
+        const baseUrl = `https://api.github.com/repos/${owner}/${repo}/contents`;
+
+        async function fetchDirectoryContents(path = '') {
+            try {
+                const response = await fetch(`${baseUrl}/${path}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching directory contents:', error);
+                throw error;
+            }
+        }
+
+        function createFileElement(file) {
+            const li = document.createElement('li');
+            li.className = 'file-icon';
+            
+            const link = document.createElement('a');
+            link.href = file.download_url;
+            link.textContent = file.name;
+            link.target = '_blank';
+            
+            li.appendChild(link);
+            return li;
+        }
+
+        function createFolderElement(folder) {
+            const li = document.createElement('li');
+            li.className = 'folder-icon';
+            
+            const arrow = document.createElement('span');
+            arrow.className = 'arrow';
+            
+            const span = document.createElement('span');
+            span.textContent = folder.name;
+            span.style.cursor = 'pointer';
+            
+            const ul = document.createElement('ul');
+            ul.className = 'hidden';
+            
+            li.appendChild(arrow);
+            li.appendChild(span);
+            li.appendChild(ul);
+            
+            const toggleFolder = async () => {
+                if (ul.children.length === 0) {
+                    try {
+                        const contents = await fetchDirectoryContents(folder.path);
+                        await buildDirectoryStructure(contents, ul);
+                    } catch (error) {
+                        const errorLi = document.createElement('li');
+                        errorLi.className = 'error';
+                        errorLi.textContent = 'Failed to load directory contents.';
+                        ul.appendChild(errorLi);
+                    }
+                }
+                
+                ul.classList.toggle('hidden');
+                arrow.classList.toggle('expanded');
+                li.classList.toggle('expanded');
+            };
+            
+            arrow.addEventListener('click', toggleFolder);
+            span.addEventListener('click', toggleFolder);
+            
+            return li;
+        }
+
+        async function buildDirectoryStructure(contents, parentElement) {
+            // Sort contents: folders first, then files, both alphabetically
+            contents.sort((a, b) => {
+                if (a.type !== b.type) {
+                    return a.type === 'dir' ? -1 : 1;
+                }
+                return a.name.localeCompare(b.name);
+            });
+
+            for (const item of contents) {
+                const element = item.type === 'dir' 
+                    ? createFolderElement(item)
+                    : createFileElement(item);
+                parentElement.appendChild(element);
+            }
+        }
+
+        async function initializeFileTree() {
+            const fileTree = document.getElementById('file-tree');
+            const loading = document.getElementById('loading');
+
+            try {
+                const rootUl = document.createElement('ul');
+                rootUl.className = 'tree-item';
+                fileTree.appendChild(rootUl);
+
+                const contents = await fetchDirectoryContents('');
+                await buildDirectoryStructure(contents, rootUl);
+                loading.style.display = 'none';
+            } catch (error) {
+                loading.textContent = 'Failed to load repository structure. Please try again later.';
+                loading.className = 'error';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeFileTree);
+    </script>
+</body>
+</html>
