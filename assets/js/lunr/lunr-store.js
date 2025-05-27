@@ -41,6 +41,12 @@ var store = [{
         "url": "/people/mark/",
         "teaser": null
       },{
+        "title": "Mel",
+        "excerpt":"I’m a third-year PhD student at Vanderbilt University, working with ADCL over the summer of 2025 to develop a Julia framework for working with fully continuous, differentiable partially observable multiagent scenarios. At my home lab - the Vanderbilt Mathematical Programming and Intelligent Robotics Lab (VAMPIR) - I build algorithms for...","categories": [],
+        "tags": [],
+        "url": "/people/mel/",
+        "teaser": null
+      },{
         "title": "Michael",
         "excerpt":"I am a PhD student in Electrical Engineering and Computer Sciences - Control, Intelligent Systems, and Robotics (CIR) at UC Berkeley, grateful to be advised by Profs. Claire J. Tomlin and Zachary N. Sunberg. I am interested in developing autonomous systems and architectures that integrate learning, control, and planning to...","categories": [],
         "tags": [],
