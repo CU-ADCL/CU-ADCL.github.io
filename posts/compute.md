@@ -42,3 +42,38 @@ Files may be moved with the [`mv` command](https://ubuntu.com/tutorials/command-
 
 ### System Administration
 See [ADCL System Administration](https://o365coloradoedu-my.sharepoint.com/:w:/r/personal/bekr4901_colorado_edu/_layouts/15/Doc.aspx?sourcedoc=%7B6DBA0F17-9DE1-4C2B-9E0E-42634F60D570%7D&file=INTERNAL%20-%20ADCL%20System%20Administration.docx&action=default&mobileredirect=true)
+
+## CU Computing Resources
+### Alpine
+Alpine is a [well documented](https://curc.readthedocs.io/en/latest/clusters/alpine/index.html) CU-wide SLURM cluster. To get started with Julia on Alpine:
+
+* [Make an account](https://rcamp.rc.colorado.edu/accounts/account-request/create/verify/ucb)
+* You may need to wait for some time between making an account and logging in for the first time, the documentation says ~15 minutes
+* Go to the [OnDemand page](https://ondemand.rc.colorado.edu/)
+  * If you get an error, try either clearing your cache/cookies or starting an incognito window
+* Request an interactive session
+  * Interactive Apps (top of screen) -> Jupyter Session
+  * Check "Use JupyterLab"
+  * Preset configuration "4 cores, 4 hours"
+  * Launch
+  * This should take less than a minute to queue and initialize
+* Install and configure Julia
+  * Click the host link i.e. `>_c3cpu-c15-u34-3.rc.int.colorado.edu`
+  * Either save and execute the following bash script, or run line by line. This may take several minutes to run
+```
+#!/bin/bash
+echo export JULIA_DEPOT_PATH=/projects/$USER/.julia >> ~/.bashrc
+echo export JULIAUP_DEPOT_PATH=/projects/$USER/.julia >> ~/.bashrc 
+source ~/.bashrc
+curl -fsSL https://install.julialang.org | sh
+source ~/.bashrc
+julia --threads auto -e 'import Pkg; Pkg.add("IJulia"); using IJulia; IJulia.installkernel("Julia", "--threads=auto"; env=Dict("JULIA_DEPOT_PATH"=>"/projects/" * ENV["USER"] * "/.julia"))'
+```
+* Log out from your shell and close the tab
+* Back on the OnDemand page "Connect to Jupyter"
+* In JupyterLab
+  * File -> Open from Path… -> /home/{Username} i.e. /home/jawa5671
+  * Create a Julia notebook
+  * println("Hello world!")
+
+Note: You may need to re-run the `IJulia.installkernel` function when you install a new version of Julia
