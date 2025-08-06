@@ -169,7 +169,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-link"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#lab-computing-resources">Lab Computing Resources</a><ul><li><a href="#access">Access</a></li><li><a href="#session-management">Session Management</a></li><li><a href="#persisent-sessions">Persisent Sessions</a></li><li><a href="#using-julia">Using Julia</a></li><li><a href="#github">Github</a></li><li><a href="#storage">Storage</a></li><li><a href="#system-administration">System Administration</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#lab-computing-resources">Lab Computing Resources</a><ul><li><a href="#access">Access</a></li><li><a href="#session-management">Session Management</a></li><li><a href="#persisent-sessions">Persisent Sessions</a></li><li><a href="#using-julia">Using Julia</a></li><li><a href="#github">Github</a></li><li><a href="#storage">Storage</a></li><li><a href="#system-administration">System Administration</a></li></ul></li><li><a href="#cu-computing-resources">CU Computing Resources</a><ul><li><a href="#alpine">Alpine</a></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -210,6 +210,55 @@
 
 <h3 id="system-administration">System Administration</h3>
 <p>See <a href="https://o365coloradoedu-my.sharepoint.com/:w:/r/personal/bekr4901_colorado_edu/_layouts/15/Doc.aspx?sourcedoc=%7B6DBA0F17-9DE1-4C2B-9E0E-42634F60D570%7D&amp;file=INTERNAL%20-%20ADCL%20System%20Administration.docx&amp;action=default&amp;mobileredirect=true">ADCL System Administration</a></p>
+
+<h2 id="cu-computing-resources">CU Computing Resources</h2>
+<h3 id="alpine">Alpine</h3>
+<p>Alpine is a <a href="https://curc.readthedocs.io/en/latest/clusters/alpine/index.html">well documented</a> CU-wide SLURM cluster. To get started with Julia on Alpine:</p>
+
+<ul>
+  <li><a href="https://rcamp.rc.colorado.edu/accounts/account-request/create/verify/ucb">Make an account</a></li>
+  <li>You may need to wait for some time between making an account and logging in for the first time, the documentation says ~15 minutes</li>
+  <li>Go to the <a href="https://ondemand.rc.colorado.edu/">OnDemand page</a>
+    <ul>
+      <li>If you get an error, try either clearing your cache/cookies or starting an incognito window</li>
+    </ul>
+  </li>
+  <li>Request an interactive session
+    <ul>
+      <li>Interactive Apps (top of screen) -&gt; Jupyter Session</li>
+      <li>Check “Use JupyterLab”</li>
+      <li>Preset configuration “4 cores, 4 hours”</li>
+      <li>Launch</li>
+      <li>This should take less than a minute to queue and initialize</li>
+    </ul>
+  </li>
+  <li>Install and configure Julia
+    <ul>
+      <li>Click the host link i.e. <code class="language-plaintext highlighter-rouge">&gt;_c3cpu-c15-u34-3.rc.int.colorado.edu</code></li>
+      <li>Either save and execute the following bash script, or run line by line. This may take several minutes to run
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+echo export JULIA_DEPOT_PATH=/projects/$USER/.julia &gt;&gt; ~/.bashrc
+echo export JULIAUP_DEPOT_PATH=/projects/$USER/.julia &gt;&gt; ~/.bashrc 
+source ~/.bashrc
+curl -fsSL https://install.julialang.org | sh
+source ~/.bashrc
+julia --threads auto -e 'import Pkg; Pkg.add("IJulia"); using IJulia; IJulia.installkernel("Julia", "--threads=auto"; env=Dict("JULIA_DEPOT_PATH"=&gt;"/projects/" * ENV["USER"] * "/.julia"))'
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Log out from your shell and close the tab</li>
+  <li>Back on the OnDemand page “Connect to Jupyter”</li>
+  <li>In JupyterLab
+    <ul>
+      <li>File -&gt; Open from Path… -&gt; /home/{Username} i.e. /home/jawa5671</li>
+      <li>Create a Julia notebook</li>
+      <li>println(“Hello world!”)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Note: You may need to re-run the <code class="language-plaintext highlighter-rouge">IJulia.installkernel</code> function when you install a new version of Julia</p>
 
         
       </section>
