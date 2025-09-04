@@ -32,3 +32,5 @@ To add more information, edit this file: [https://github.com/CU-ADCL/CU-ADCL.git
 |L4DC | June | Dec |
 |CHI  | Apr/May | Sept |
 |ICML| Jul  | Jan |
+|RLC | Aug | Feb |
+|AISTATS | May | Oct |
