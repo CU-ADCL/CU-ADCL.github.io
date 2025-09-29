@@ -20,6 +20,7 @@ This schedule may slip a bit, and this is normal. However, if the schedule slips
 ### D-28
 - [ ] Overleaf created and shared - include the venue in the overleaf project name.
 - [ ] All potential co-authors have confirmed that are aware of the paper and have access to overleaf.
+- [ ] The expected contributions have been outlined near the beginning of the paper.
 
 ### D-21
 - [ ] Initial figures and results tables are in the pdf.
