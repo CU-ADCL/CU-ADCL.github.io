@@ -10,6 +10,6 @@ header:
 excerpt: We study and develop autonomy with an uncertainty-first approach.
 ---
 
-You can find out more about the ADCL using the [Research](research), [Publications](publications), and [People](people) links above. Our group meetings are open to the public. Join our [mailing list](https://groups.google.com/a/colorado.edu/g/aeroengr-gg-adcl-meetings) for weekly emails with group meeting details.
+You can find out more about the ADCL using the [Research](research), [Publications](publications), and [People](people) links above. Our group meetings are open to the public.
 
 {% include news.html %}

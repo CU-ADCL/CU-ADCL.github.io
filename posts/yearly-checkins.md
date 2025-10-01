@@ -66,7 +66,7 @@ Exam" [Defense](https://www.colorado.edu/aerospace/academics/graduates/phd-advis
 ## Advising relationship
 - In what ways are our interactions most/least helpful?
 - Would you like me to do anything differently going forward?
-- Are there specific ways that I can push you to help you achieve your goals next year?
+- Are there specific ways that I can help you push youself to achieve our goals next year?
 
 ---
 
