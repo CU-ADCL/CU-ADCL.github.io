@@ -21,6 +21,7 @@ This schedule may slip a bit, and this is normal. However, if the schedule slips
 - [ ] Overleaf created and shared - include the venue in the overleaf project name.
 - [ ] All potential co-authors have confirmed that are aware of the paper and have access to overleaf.
 - [ ] The expected contributions have been outlined near the beginning of the paper.
+- [ ] If the review process is not double blind, all Acknowledgement to funding sources have been inserted.
 
 ### D-21
 - [ ] Initial figures and results tables are in the pdf.
@@ -54,6 +55,7 @@ This schedule may slip a bit, and this is normal. However, if the schedule slips
 
 - [ ] Update entry in [our-pubs.bib](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/our-pubs.bib) by removing the under/review
 - [ ] Add entry to [news.csv](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/_data/news.csv)
+- [ ] Make sure Acknowledgements to all funding sources have been included.
 
 ### After Final Camera-Ready Submission
 
