@@ -1,8 +1,8 @@
-const version = '20251003164004';
+const version = '20251108095544';
 const cacheName = `static::${version}`;
 
 const buildContentBlob = () => {
-  return ["/posts/compute/","/posts/conferences/","/","/assets/css/main.css","/manifest.json","/people/","/posts/publication-checklist/","/publications/","/research/","/resources/","/assets/search.json","/assets/styles.css","/posts/writing/","/posts/yearly-checkin/","/assets/js/lunr/lunr-en.js","/assets/js/lunr/lunr-gr.js","/assets/js/lunr/lunr-store.js","/redirects.json","/pdfs/","/sitemap.xml","/robots.txt","/feed.xml","/assets/logos/ADCL-rounded.svg", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
+  return ["/posts/classes/","/posts/compute/","/posts/conferences/","/","/assets/css/main.css","/manifest.json","/people/","/posts/publication-checklist/","/publications/","/research/","/resources/","/assets/search.json","/assets/styles.css","/posts/writing/","/posts/yearly-checkin/","/assets/js/lunr/lunr-en.js","/assets/js/lunr/lunr-gr.js","/assets/js/lunr/lunr-store.js","/redirects.json","/pdfs/","/sitemap.xml","/robots.txt","/feed.xml","/assets/logos/ADCL-rounded.svg", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
   ]
 }
 
