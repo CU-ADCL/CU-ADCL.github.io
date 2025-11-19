@@ -44,7 +44,7 @@ The policy update step is separated into two routines: the belief formulation an
 
 This is like our little soldier considering all particles (proposed locations), picking a final value (mean) and extracting high-order features from the set of all of them (such as flora and / or fauna in each proposed location) to make a final decision about where it is (its belief).
 
-These features combine to form a permutation-invariant belief vector $\left[\bar{h}_t, M_t^{1:m}\right]$. This belief vector is then used to determine our policy $\pi\left(a_t \, | \, b_t\right)$ and value $V\left(b_t\right)$.
+These features combine to form a permutation-invariant belief vector $\left[\bar{h}_t, M_t^{1:m}\right]$. This belief vector is then used to determine our policy $\pi\left(a_t \, \mid \, b_t\right)$ and value $V\left(b_t\right)$.
 
 ## **So... Why Does This Work?**
 
@@ -52,7 +52,7 @@ These features combine to form a permutation-invariant belief vector $\left[\bar
 
 The short version is that DPFRL optimizes for complex environments, not reconstruction; it only learns to recognize observation features that help pick good actions. The Observation-Conditioned Transition Function $f_{trans}\left(h_{t - 1}^i, a_t, o_t\right)$ steers particles toward latent states that can actually explain what was just seen considering the agent dynamics. The Compatibility Function $f_{obs}\left(h_t^i, o_t\right)$ assigns unnormalized scores to the latent state particles relative to its learned ranking. These scores are normalized along with particle regeneration during a Soft-Resampling step.
 
-DPFRL cleverly turns the problem of modeling the full image distribution $p\left(o \, | \, h_t\right)$ into an easier one: learn to propose plausible hypotheses from what you just saw and score them for decision relevance. On benchmarks where observations are visually complex, DPFRL maintains "state-of-the-art" scores while baselines using a generative model struggle as they see observations of the same environment under different conditions as completely different environments.
+DPFRL cleverly turns the problem of modeling the full image distribution $p\left(o \, \mid \, h_t\right)$ into an easier one: learn to propose plausible hypotheses from what you just saw and score them for decision relevance. On benchmarks where observations are visually complex, DPFRL maintains "state-of-the-art" scores while baselines using a generative model struggle as they see observations of the same environment under different conditions as completely different environments.
 
 DPFRL only needs to learn "does this particle match what I'm seeing for decision purposes?" instead of "can I reconstruct every pixel, including that coffee stain?"; a way easier problem to solve. On benchmarks like Flickering Atari Games (where frames randomly go blank) and Natural Flickering Atari Games (the same as the prior except with random YouTube videos as backgrounds), DPFRL substantially outperforms methods using generative models. **TL;DR: Instead of painting a masterpiece to prove you're in a museum, just check if the important features of what you see match "you're in a museum".**
 
@@ -62,9 +62,9 @@ DPFRL only needs to learn "does this particle match what I'm seeing for decision
 
 > Not many actually!
 >
-> -Particle count $K$: more increases compute and memory usage, but better handles multi-modality and approximates of the posterior distribution.​
-> -Soft‑Resampling $\alpha$: higher leads to importance sampling; lower leads to more exploration to avoid particle collapse.​
-> -MGF feature count $m$: captures more higher-order information from the particle moments.
+> - Particle count $K$: more increases compute and memory usage, but better handles multi-modality and approximates of the posterior distribution.
+> - Soft‑Resampling $\alpha$: higher leads to importance sampling; lower leads to more exploration to avoid particle collapse.
+> - MGF feature count $m$: captures more higher-order information from the particle moments.
 
 ### What are the trade‑offs?
 
