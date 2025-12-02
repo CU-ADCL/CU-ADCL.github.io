@@ -12,7 +12,7 @@ This page contains blog posts from students and researchers in the ADCL and DMU+
 - [Communication Lessons from Combat Aviation for Unmanned Wingmen](/posts/dmupp-2025/mark-boyer-unmanned-wingmen.pdf) - Mark Boyer
 - [Zero to Reality: AlphaGo, MuZero and the Road to Real-World AI](/posts/dmupp-2025/alphago-to-muzero/) - Lorenzzo Quevedo Mantovani
 - [Generative Models hate this one trick to mitigate Observation Complexity](/posts/dmupp-2025/dpfrl-generative-models/) - Gabriel Agostine
-- [The Future of Safe RLHF (Reinforcement Learning from Human Feedback)](/posts/dmupp-2025/safe-rlhf/) - Anonymous
+- [The Future of Safe RLHF (Reinforcement Learning from Human Feedback)](/posts/dmupp-2025/safe-rlhf/)
 - [Diffusion Models: A New Playground for Reinforcement Learning](/posts/dmupp-2025/diffusion-world-models/) - Anaïs Cheval
 - [When Will Robots Do My Chores? Progress and Promises in Bridging Simulation and Reality](https://medium.com/@xaok7569/when-will-robots-do-my-chores-progress-and-promises-in-bridging-simulation-and-reality-cf6b9e345cf1) - Xavier O'keefe
 - [Robust Trajectory RL](https://dhutererprats.github.io/personal_website/blog/robust-trajectory-rl.html) - Daniel Huterer Prats
