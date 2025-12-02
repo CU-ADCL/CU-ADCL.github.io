@@ -6,8 +6,8 @@ class: resources
 toc: true
 toc_icon: "link"
 toc_sticky: true
-author: Lisa Ventura
-author_email: lisa.ventura@colorado.edu
+author: Anonymous
+author_email: anonymous@colorado.edu
 mathjax: true
 ---
 
