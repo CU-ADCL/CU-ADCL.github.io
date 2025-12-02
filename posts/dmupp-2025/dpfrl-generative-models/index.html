@@ -1,0 +1,342 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Generative Models hate this one trick to mitigate Observation Complexity - Autonomous Decision and Control Lab</title>
+<meta name="description" content="Autonomous Decision and Control Lab">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Autonomous Decision and Control Lab">
+<meta property="og:title" content="Generative Models hate this one trick to mitigate Observation Complexity">
+<meta property="og:url" content="https://www.cu-adcl.org//posts/dmupp-2025/dpfrl-generative-models/">
+
+
+  <meta property="og:description" content="Autonomous Decision and Control Lab">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://www.cu-adcl.org//posts/dmupp-2025/dpfrl-generative-models/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.cu-adcl.org//"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Autonomous Decision and Control Lab Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div style="height: 40px; padding: 10px;">
+  <a class="cu-logo" href="https://www.colorado.edu"><img src="/assets/images/cu.png" width="300" alt="University of Colorado Boulder"></a>
+</div>
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/logos/ADCL-rounded.svg" alt="Autonomous Decision and Control Lab"></a>
+        
+        <a class="site-title" href="/">
+            <!--Autonomous Decision and Control Lab-->
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/people/">People</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Generative Models hate this one trick to mitigate Observation Complexity">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Generative Models hate this one trick to mitigate Observation Complexity
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-link"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#abstract">Abstract</a></li><li><a href="#generative-models-just-cant-cut-it">Generative Models Just Can’t Cut It</a></li><li><a href="#todays-hero-the-discriminative-particle-filter">Today’s Hero: The Discriminative Particle Filter</a></li><li><a href="#policy--value-update">Policy &amp; Value Update</a></li><li><a href="#so-why-does-this-work">So… Why Does This Work?</a></li><li><a href="#faq">FAQ</a><ul><li><a href="#i-dont-like-tuning-hyperparameters-how-many-knobs-does-dpfrl-have-to-tune">I don’t like tuning hyperparameters… How many knobs does DPFRL have to tune?</a></li><li><a href="#what-are-the-tradeoffs">What are the trade‑offs?</a></li><li><a href="#what-are-mgf-features-in-plain-english">What are MGF features in plain English?</a></li><li><a href="#what-if-my-observations-are-simple">What if my observations are simple?</a></li></ul></li><li><a href="#resources">Resources</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="abstract"><strong>Abstract</strong></h2>
+
+<p><strong>The “Generative Model” is often defined as a Neural Network (NN) that allows for the querying of some input and receiving some output. In the case of a Generative Observation Model, it defines $p\left(o \, \mid \, h_t\right)$. To those with a keen eye, you might realize that this begets modeling every pixel, shadow, and irrelevant texture in the case of a visual observation. <a href="https://openreview.net/forum?id=HJl8_eHYvS">Discriminative Particle Filter Reinforcement Learning (DPFRL) for Complex Partial Observations</a> says “why bother?” and instead proposes the idea of using a set of learned latent states and weights to approximate the belief. By matching particles to observations and scoring them, DPFRL instead skips the need for messy reconstructions. Add on these magical “Moment Generating Functions” (MGFs) and we have a system better equipped to handle visually complex environments.</strong></p>
+
+<h2 id="generative-models-just-cant-cut-it"><strong>Generative Models Just Can’t Cut It</strong></h2>
+
+<p>A Generative Model (in the case of Reinforcement Learning) is typically a Neural Net (NN) that defines the probability of seeing a specific observation given some latent state: $p\left(o \, \mid \, h_t\right)$. These generative models must essentially model every variation of every feature for every environment. In the case of an image, this means considering every pixel, even if said pixel contains irrelevant data. This yields what is called a “Complex Observation Environment”.</p>
+
+<p>Generative Models have difficulty with this as they inherently consider these irrelevant visual complexities. They’re like me in the Lego store, unable to resist purchasing something. While a generative model may do fine in an environment similar to the one that it was trained in; turn the lights off and you might suddenly find your algorithm struggling to perform just as well. This is because the agent receives an observation (while possibly of an environment that it has seen before) that it perceives as different due to the different pixel values or latent state reconstruction. Imagine if, upon turning the lights off in your house, you suddenly believed you were in a completely different country. That would probably make you act differently than you would if you realized you were still in your house.</p>
+
+<p>This leads to a desire for some Observation Model that is more capable of ignoring these irrelevant details. What would this observation model look like, however? If we consider ourselves as a little soldier that needs to localize itself; using a generative model is like knowing (or having to know) every possible environment under every possible circumstance and then get a probability distribution of where it is with such knowledge. This is understandably unreasonable, so what if we instead just looked at features of the environment we are in and made a guess from there.</p>
+
+<h2 id="todays-hero-the-discriminative-particle-filter"><strong>Today’s Hero: The Discriminative Particle Filter</strong></h2>
+
+<p><img src="/assets/images/dmupp-2025/DPFRL_structure.png" alt="DPFRL Structure" title="DPFRL Structure" />
+<img src="/assets/images/dmupp-2025/DPFRL_algorithm.png" alt="DPFRL Algorithm" title="DPFRL Algorithm" /></p>
+
+<p>The authors of Discriminative Particle Filter Reinforcement Learning (DPFRL) propose the discriminative belief update. A discriminative update “discriminates” by which particle better fits the current observation. This is done by the use of two learned NNs trained end-to-end.</p>
+
+<p>The first network is an Observation-Conditioned Transition Function $h_t^i \sim f_{trans}\left(h_{t - 1}^i, a_t, o_t\right)$. This network outputs / proposes a new latent state that it believes is most likely given the previous latent state, current action taken and observation currently seen. Back to our little soldier analogy; this is like the soldier considering what it sees and guessing where it could be. Is it a really green or lush environment? Perhaps it’s in a soil-rich ecosystem or near water? Is it really rocky and dry? Perhaps it’s at altitude or in a hot environment? This is what the observation conditioned transition function does. It considers its environment (and its previously guessed location, as well as what action it just took) and guesses where it is.</p>
+
+<p>The second network is a Compatibility Function $f_{obs}\left(h_t^i, o_t\right)$. The previous “proposed new latent state” is then assigned a weight by $f_{obs}$ given said latent state and current observation (multiplied by the previous weight and scaling factor $\eta$). Again, back to the little soldier analogy; this is like saying “Ok, I think I’m here now… does that actually align with what I’m seeing?”</p>
+
+<p>Consider the following example: Our little soldier is in an icy, cold environment with penguins everywhere. The soldier sails North and reaches a semi-lush / arid environment with kangaroos. The transition function $f_{trans}\left(h_{t - 1}^i, a_t, o_t\right)$ takes into account that the soldier moved North, was previously somewhere cold and icy and is now seeing someplace arid. It then proposes a set of new locations (latent state particles), let’s say: <code class="language-plaintext highlighter-rouge">[Southern Africa, Southern South America, Southern Australia]</code>. The compatibility function $f_{obs}\left(h_t^i, o_t\right)$ then weights each of these proposed latent state particles according to what it is seeing. It sees a semi-lush / arid environment so perhaps it could be any of the three, but the kangaroos align with a high weight for Southern Australia. Thus, each latent state has weights perhaps as such: <code class="language-plaintext highlighter-rouge">{{Southern Africa, 0.2}, {Southern South America, 0.1}, {Southern Australia, 0.7}}</code>. This set of latent states and associated weights define our set of particles.</p>
+
+<p>In the last Discriminative Particle Filter step, our particles are regenerated (as is common in particle filters) to prevent particle degeneration. The unnormalized particle weights found from the compatibility function are normalized, and these particles are passed back into the filter to be used again for the next step. The former two steps are wrapped into a “Soft-Resampling” step as called by the original authors. The final step is to form our particles into a belief used for our policy and value updates.</p>
+
+<h2 id="policy--value-update"><strong>Policy &amp; Value Update</strong></h2>
+
+<p>The policy update step is separated into two routines: the belief formulation and policy and value updates. The belief is formulated using the mean latent state $\left(\bar{h}_t\right)$ and Moment Generating Function (MGF) features. These MGF features summarize the belief by evaluating the weighted latent states at learned locations, capturing higher-order information. This higher-order information is more descriptive than just the mean, which is useful in complex environments.</p>
+
+<p>This is like our little soldier considering all particles (proposed locations), picking a final value (mean) and extracting high-order features from the set of all of them (such as flora and / or fauna in each proposed location) to make a final decision about where it is (its belief).</p>
+
+<p>These features combine to form a permutation-invariant belief vector $\left[\bar{h}_t, M_t^{1:m}\right]$. This belief vector is then used to determine our policy $\pi\left(a_t \, \mid \, b_t\right)$ and value $V\left(b_t\right)$.</p>
+
+<h2 id="so-why-does-this-work"><strong>So… Why Does This Work?</strong></h2>
+
+<p><img src="/assets/images/dmupp-2025/NFAG.png" alt="Flickering and Natural Flickering Atari Games" title="Flickering and Natural Flickering Atari Games" /></p>
+
+<p>The short version is that DPFRL optimizes for complex environments, not reconstruction; it only learns to recognize observation features that help pick good actions. The Observation-Conditioned Transition Function $f_{trans}\left(h_{t - 1}^i, a_t, o_t\right)$ steers particles toward latent states that can actually explain what was just seen considering the agent dynamics. The Compatibility Function $f_{obs}\left(h_t^i, o_t\right)$ assigns unnormalized scores to the latent state particles relative to its learned ranking. These scores are normalized along with particle regeneration during a Soft-Resampling step.</p>
+
+<p>DPFRL cleverly turns the problem of modeling the full image distribution $p\left(o \, \mid \, h_t\right)$ into an easier one: learn to propose plausible hypotheses from what you just saw and score them for decision relevance. On benchmarks where observations are visually complex, DPFRL maintains “state-of-the-art” scores while baselines using a generative model struggle as they see observations of the same environment under different conditions as completely different environments.</p>
+
+<p>DPFRL only needs to learn “does this particle match what I’m seeing for decision purposes?” instead of “can I reconstruct every pixel, including that coffee stain?”; a way easier problem to solve. On benchmarks like Flickering Atari Games (where frames randomly go blank) and Natural Flickering Atari Games (the same as the prior except with random YouTube videos as backgrounds), DPFRL substantially outperforms methods using generative models. <strong>TL;DR: Instead of painting a masterpiece to prove you’re in a museum, just check if the important features of what you see match “you’re in a museum”.</strong></p>
+
+<h2 id="faq"><strong>FAQ</strong></h2>
+
+<h3 id="i-dont-like-tuning-hyperparameters-how-many-knobs-does-dpfrl-have-to-tune">I don’t like tuning hyperparameters… How many knobs does DPFRL have to tune?</h3>
+
+<blockquote>
+  <p>Not many actually!</p>
+
+  <ul>
+    <li>Particle count $K$: more increases compute and memory usage, but better handles multi-modality and approximates of the posterior distribution.</li>
+    <li>Soft‑Resampling $\alpha$: higher leads to importance sampling; lower leads to more exploration to avoid particle collapse.</li>
+    <li>MGF feature count $m$: captures more higher-order information from the particle moments.</li>
+  </ul>
+</blockquote>
+
+<h3 id="what-are-the-tradeoffs">What are the trade‑offs?</h3>
+
+<blockquote>
+  <p>You don’t get the additional reconstruction signal that some generative models can use, which sometimes helps supplement learning in simpler settings. Similarly, with too few particles or extremely complex visuals, the model can still struggle to maintain a sharp belief.</p>
+</blockquote>
+
+<h3 id="what-are-mgf-features-in-plain-english">What are MGF features in plain English?</h3>
+
+<blockquote>
+  <p>Think of them as quick “probes” of the belief that capture not just the average guess, but also how spread out or lopsided the guesses are.</p>
+</blockquote>
+
+<h3 id="what-if-my-observations-are-simple">What if my observations are simple?</h3>
+
+<blockquote>
+  <p>The performance gap narrows; generative models, mean‑only belief summaries, only 1 particle and more may perform similarly, but DPFRL remains a solid, structured baseline comparable to generative models nonetheless.</p>
+</blockquote>
+
+<h2 id="resources"><strong>Resources</strong></h2>
+
+<p>Considering looking into DPFRL for your use case? Perhaps you want to learn about specific algorithmic implementation details to further your understanding of the high-level topics. Here’s a list of nice resources for you that I found useful:</p>
+
+<blockquote>
+  <p>Original paper: <a href="https://openreview.net/forum?id=HJl8_eHYvS">Discriminative Particle Filter Reinforcement Learning (DPFRL) for Complex Partial Observations</a>
+Author GitHub implementation: <a href="https://github.com/Yusufma03/DPFRL/tree/master">DPFRL</a></p>
+</blockquote>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Autonomous Decision and Control Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

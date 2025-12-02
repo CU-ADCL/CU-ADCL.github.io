@@ -1,0 +1,482 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Bridging Language and Action: How Vision-Language-Action Models and Reinforcement Learning Enable Intelligent Robotic Decision Making - Autonomous Decision and Control Lab</title>
+<meta name="description" content="Autonomous Decision and Control Lab">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Autonomous Decision and Control Lab">
+<meta property="og:title" content="Bridging Language and Action: How Vision-Language-Action Models and Reinforcement Learning Enable Intelligent Robotic Decision Making">
+<meta property="og:url" content="https://www.cu-adcl.org//posts/dmupp-2025/rl-vla-robotics/">
+
+
+  <meta property="og:description" content="Autonomous Decision and Control Lab">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://www.cu-adcl.org//posts/dmupp-2025/rl-vla-robotics/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.cu-adcl.org//"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Autonomous Decision and Control Lab Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div style="height: 40px; padding: 10px;">
+  <a class="cu-logo" href="https://www.colorado.edu"><img src="/assets/images/cu.png" width="300" alt="University of Colorado Boulder"></a>
+</div>
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/logos/ADCL-rounded.svg" alt="Autonomous Decision and Control Lab"></a>
+        
+        <a class="site-title" href="/">
+            <!--Autonomous Decision and Control Lab-->
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/people/">People</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Bridging Language and Action: How Vision-Language-Action Models and Reinforcement Learning Enable Intelligent Robotic Decision Making">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Bridging Language and Action: How Vision-Language-Action Models and Reinforcement Learning Enable Intelligent Robotic Decision Making
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-link"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#1-introduction">1. Introduction</a></li><li><a href="#2-foundations">2. Foundations</a><ul><li><a href="#21-reinforcement-learning">2.1 Reinforcement Learning</a></li><li><a href="#22-vision-language-action-models">2.2 Vision-Language-Action Models</a></li><li><a href="#23-conceptual-contrast">2.3 Conceptual Contrast</a></li><li><a href="#24-toward-integration">2.4 Toward Integration</a></li></ul></li><li><a href="#3-where-rl-meets-vla">3. Where RL Meets VLA</a><ul><li><a href="#31-rl-fine-tuning-of-vla-models">3.1 RL Fine-Tuning of VLA Models</a></li><li><a href="#32-hierarchical-architectures">3.2 Hierarchical Architectures</a></li></ul></li><li><a href="#4-applications-and-future-directions">4. Applications and Future Directions</a></li><li><a href="#5-conclusion">5. Conclusion</a></li><li><a href="#6-references">6. References</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="1-introduction">1. Introduction</h2>
+
+<p>The intersection of natural language understanding and robotic control is an exciting, active area of research in robotics. Advances in Large Language Models (LLMs) and Vision-Language Models (VLMs) paved the way for Vision-Language-Action (VLA) models which are systems capable of translating high-level human instructions into executable robot behaviors. At the same time, Reinforcement Learning (RL) remains the dominant framework for solving sequential decision-making problems in robotics. The convergence of these two approaches offers a promising path toward building general-purpose robotic systems that can understand human intent, reason about their environment, and adapt to novel situations.</p>
+
+<p>When I first learned about VLAs, I imagined them as a substitute for traditional Reinforcement Learning. Consider a simple navigation task: moving a robot through a grid world to reach a goal state. In a classical RL setup, the robot would explore through trial and error, eventually learning an optimal policy from reward feedback. In contrast, I pictured a VLA-based system where I could simply instruct the robot, “Go to the green circle,” and it would infer the necessary sequence of actions from visual input. This framing makes RL and VLAs seem fundamentally distinct.</p>
+
+<p>However, recent research suggests otherwise. RL and VLAs are being used in combination, from the use of RL during pre-training and supervised fine-tuning to hierarchical control stacks in autonomous navigation. So this blog post that began as a comparison between two seemingly distinct paradigms became an exploration of their interconnected use cases. In this post, we’ll examine how RL and VLA models complement each other in addressing core challenges in robotics. We’ll introduce some theoretical foundations and then discuss practical integration strategies that enable robots to combine semantic understanding with low-level adaptive control.</p>
+
+<h2 id="2-foundations">2. Foundations</h2>
+
+<p>Before diving into how Reinforcement Learning (RL) and Vision-Language-Action (VLA) models intersect, let’s briefly review their conceptual foundations.</p>
+
+<h3 id="21-reinforcement-learning">2.1 Reinforcement Learning</h3>
+
+<p>Reinforcement Learning is a framework for sequential decision-making under uncertainty. We’ll consider the fully observable case here, but know that there’s also a partial observability case where parts of the environment are hidden or noisy.</p>
+
+<p>An RL agent interacts with an environment commonly modeled an Markov Decision Process (MDP), formalized as a tuple $\mathcal{M} = (\mathcal{S}, \mathcal{A}, P, R, \gamma)$ where:</p>
+
+<ul>
+  <li>$\mathcal{S}$ is the state space representing possible robot and environment configurations</li>
+  <li>$\mathcal{A}$ is the action space containing available robot actions</li>
+  <li>$P: \mathcal{S} \times \mathcal{A} \times \mathcal{S} \to [0,1]$ is the transition probability function</li>
+  <li>$R: \mathcal{S} \times \mathcal{A} \to \mathbb{R}$ is the reward function</li>
+  <li>$\gamma \in [0,1)$ is the discount factor</li>
+</ul>
+
+<p>The Markov property ensures that the future state depends only on the current state and action:</p>
+
+\[P(s_{t+1} | s_t, a_t, s_{t-1}, a_{t-1}, \ldots) = P(s_{t+1} | s_t, a_t)\]
+
+<p>At each timestep $t$, the agent observes a state $s_t$, takes an action $a_t$, receives a reward $r_t$, and transitions to a new state $s_{t+1}$. The goal is to learn a policy $\pi(a|s)$ that maximizes the expected cumulative discounted reward:</p>
+
+\[J(\pi) = \mathbb{E}_{\tau \sim \pi} \left[ \sum_{t=0}^{\infty} \gamma^t r_t \right]\]
+
+<p>where $\tau = (s_0, a_0, s_1, a_1, \ldots)$ denotes a trajectory sampled by following policy $\pi$.</p>
+
+<p>RL algorithms approach this optimization problem in different ways. <strong>Value-based methods</strong> learn to estimate how good it is to be in a state or take an action. The state-value function $V^\pi(s)$ represents the expected return from state $s$ under policy $\pi$:</p>
+
+\[V^\pi(s) = \mathbb{E}_{\tau \sim \pi} \left[ \sum_{k=0}^{\infty} \gamma^k r_{t+k} \mid s_t = s \right]\]
+
+<p>Similarly, the state-action value function (Q-function) quantifies the expected return from taking action $a$ in state $s$:</p>
+
+\[Q^\pi(s, a) = \mathbb{E}_{\tau \sim \pi} \left[ \sum_{k=0}^{\infty} \gamma^k r_{t+k} \mid s_t = s, a_t = a \right]\]
+
+<p><strong>Policy gradient methods</strong> directly optimize the policy parameters $\theta$ to maximize $J(\pi_\theta)$ by computing gradients:</p>
+
+\[\nabla_\theta J(\pi_\theta) = \mathbb{E}_{\tau \sim \pi_\theta} \left[ \sum_{t=0}^{T} \nabla_\theta \log \pi_\theta(a_t|s_t) \cdot A^\pi(s_t, a_t) \right]\]
+
+<p>where $A^\pi(s, a) = Q^\pi(s, a) - V^\pi(s)$ is the advantage function, measuring how much better action $a$ is compared to the average action in state $s$.</p>
+
+<p>Modern deep RL algorithms leverage neural networks to approximate these functions in high-dimensional spaces. <strong>Proximal Policy Optimization (PPO)</strong> [2] is an on-policy algorithm that uses neural networks to represent both the policy $\pi_\theta(a|s)$ and value function $V_\phi(s)$, updating them through clipped policy gradients to ensure stable learning. <strong>Soft Actor-Critic (SAC)</strong> [1] is an off-policy actor-critic method that simultaneously learns a policy $\pi_\theta$ and Q-function $Q_\phi$ while maximizing both expected return and entropy. <strong>Group Relative Policy Optimization (GRPO)</strong> [3] is a policy gradient method that leverages group-based relative comparisons to improve learning efficiency and has been used for fine-tuning large pretrained models. These are just a few examples of RL algorithms. There are many more!</p>
+
+<p>Many of these RL algorithms have been successfully applied to robotic control because they can learn directly from high-dimensional inputs (like images) and handle continuous action spaces. However, RL can still suffer from sample inefficiency, reward engineering challenges, and limited generalization to novel tasks or new domains. It’s possible that VLA models may help address these issues.</p>
+
+<h3 id="22-vision-language-action-models">2.2 Vision-Language-Action Models</h3>
+
+<p>Vision-Language-Action (VLA) models emerge from the foundation model paradigm. These systems combine large-scale pretraining on multimodal datasets (images, text, and sometimes video or actions) to learn joint representations that connect visual perception, linguistic understanding, and physical interaction. These models leverage internet-scale data leading to pretrained models that have exposure to much more diverse data than a typical robotics dataset.</p>
+
+<ul>
+  <li><strong>Vision encoders</strong> (e.g., ViTs, CNNs) map images or visual observations into latent embeddings.</li>
+  <li><strong>Language encoders/decoders</strong> (e.g., Transformers, LLMs) process textual inputs or instructions.</li>
+  <li><strong>Action modules</strong> map internal representations into motor commands, joint torques, or discrete control primitives.</li>
+</ul>
+
+<p>In a VLA, these components are often connected through a shared embedding space or a transformer-based architecture that fuses multimodal information. This enables the system to interpret instructions such as <em>“Pick up the red cube and place it on the blue block”</em> and produce a coherent sequence of actions. There are many different action token representations, but for the sake of this post just envision directly outputting robotics controls. For an example, see Figure 1 which shows how image and text are input into the VLA which then outputs a vector of robot controls for a gripper.</p>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/lorinachey/AI-ML-Practice/main/Vision-Language/images/open-vla-diagram.png" width="70%" alt="OpenVLA Architecture Diagram" />
+  <p><em>Figure 1: OpenVLA architecture showing the integration of vision encoders, language models, and action prediction modules. Diagram from Liu et al. [11], representing the OpenVLA model [12].</em></p>
+</div>
+
+<h3 id="23-conceptual-contrast">2.3 Conceptual Contrast</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Aspect</th>
+      <th style="text-align: left">Reinforcement Learning</th>
+      <th style="text-align: left">Vision-Language(-Action) Models</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Core Objective</strong></td>
+      <td style="text-align: left">Maximize cumulative reward via interaction</td>
+      <td style="text-align: left">Learn multimodal representations and semantic grounding</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Learning Signal</strong></td>
+      <td style="text-align: left">Scalar rewards from environment</td>
+      <td style="text-align: left">Supervised or self-supervised cross-modal alignment</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Data Source</strong></td>
+      <td style="text-align: left">Experience (simulated or real)</td>
+      <td style="text-align: left">Large curated datasets (image–text–action triples)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Strengths</strong></td>
+      <td style="text-align: left">Adaptive control, exploration, online learning</td>
+      <td style="text-align: left">Generalization, compositional reasoning, instruction following</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Limitations</strong></td>
+      <td style="text-align: left">Sample inefficiency, narrow task focus</td>
+      <td style="text-align: left">Lack of grounding without interaction, weak low-level control</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="24-toward-integration">2.4 Toward Integration</h3>
+
+<p>While these approaches originated separately, current research explores how to combine them for enhancing robot capabilities. RL provides a mechanism for adaptive control and feedback-driven learning, while VLAs supply semantic priors and contextual understanding. It’s hypothesized that integrating the two will enable robots to act optimally and also understand what they are doing and why.</p>
+
+<h2 id="3-where-rl-meets-vla">3. Where RL Meets VLA</h2>
+
+<p>The combination of Reinforcement Learning with Vision-Language-Action models is an active area of research and several promising strategies have emerged. In this section, we’ll explore two main approaches: fine-tuning VLAs with RL and hierarchical architectures that combine both.</p>
+
+<h3 id="31-rl-fine-tuning-of-vla-models">3.1 RL Fine-Tuning of VLA Models</h3>
+
+<p>VLA models have shown promise generalizing to new situations, but they can fall short when tasks demand high precision think contact-rich manipulation or tasks where exact positioning matters like low-level joint control. This is where RL fine-tuning comes in, allowing us to directly optimize the VLA policy using task-specific rewards.</p>
+
+<p>Several recent papers have shown different ways to fine-tune VLAs with RL:</p>
+
+<p><strong>VLA-R1 [4]</strong> integrates Reinforcement Learning from Verifiable Rewards (RLVR) with Group Relative Policy Optimization (GRPO) in an effort to provide VLAs with chain-of-thought style reasoning capabilities seen in recent LLMs. This approach helps VLA models better reason about object affordances and generate action sequences that are physically plausible not just semantically correct.</p>
+
+<p><strong>iRe-VLA [6]</strong> tackles one of the practical challenges: direct RL fine-tuning can be computationally expensive and unstable. Their solution is an iterative framework that alternates between RL updates and supervised learning, in an effort to get the benefits of both approaches.</p>
+
+<p>The main challenge here is a balancing performance improvements on specific tasks without losing the broad generalization that makes VLAs useful in the first place. Too much fine-tuning and the model risks catastrophic forgetting. Not enough fine-tuning and the model will be unable to perform well on the specified robotics specific tasks.</p>
+
+<h3 id="32-hierarchical-architectures">3.2 Hierarchical Architectures</h3>
+
+<p>Another strategy uses hierarchical architectures where VLA models and RL work at different levels of abstraction.</p>
+
+<p>One approach is to separate high-level planning and low-level control:</p>
+
+<ul>
+  <li><strong>High-level (VLA)</strong>: Interprets language instructions and outputs subgoals or high-level action choices</li>
+  <li><strong>Low-level (RL)</strong>: Executes those high-level commands and handles the nitty-gritty details of motor/actuator/joint control</li>
+</ul>
+
+<p>This division of labor has a practical advantage: the VLA can run at a slower rate while the RL controller runs fast. This matters because current VLAs are still slower than traditional low-level controllers. You don’t want your robot waiting around for the VLA because it could cause instability in the controls.</p>
+
+<p><strong>NaVILA [8]</strong> is a great example of this approach in action (pun intended). The VLA gets fine-tuned to output “mid-level actions” (e.g. move forward 75 centimeters) which then feed into a PPO-trained RL policy. The RL policy takes those mid-level commands and figures out the specific joint movements needed to execute them. The researchers demonstrated this on real legged robots navigating different environments based on language commands. See the diagram below that shows the NaVILA system [8].</p>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/lorinachey/AI-ML-Practice/main/Vision-Language/images/navila-figure-2.png" width="70%" alt="NaVILA High-Level Diagram" />
+  <p><em>Figure 2: NaVILA hierarchical architecture. The VLA generates mid-level actions that are executed by a low-level RL policy trained with PPO. From Cheng et al. [8].</em></p>
+</div>
+
+<p><strong>IRL-VLA [9]</strong> applies a similar hierarchical idea to autonomous driving, using a three-stage approach:</p>
+<ol>
+  <li>Pretrain a VLA policy through imitation learning</li>
+  <li>Build a reward world model using inverse RL</li>
+  <li>Use that reward model to guide further RL training (with PPO)</li>
+</ol>
+
+<p>The innovation proposed in this paper is that the reward model lets you train VLA agents with reinforcement learning without having to rely on a simulator.</p>
+
+<h2 id="4-applications-and-future-directions">4. Applications and Future Directions</h2>
+
+<p>The integration of VLA models and RL has enabled capabilities in several robotics domains (i.e. navigation, manipulation). VLA models can give robots the language and perception to understand our goals, while RL can give them the experience and feedback to achieve those goals effectively. As these two approaches continue to merge, we move closer to robots that can learn new tasks from natural instructions and improve through experience, just like humans do.</p>
+
+<p><strong>Questions to ponder (potential future research directions)</strong>:</p>
+
+<ol>
+  <li>
+    <p>Can we use VLAs to design methods that let RL fine-tune robot behavior with fewer real-world trials and less data?</p>
+  </li>
+  <li>
+    <p>Can a robot trained in simulation use the semantic understanding from a VLA to adapt more smoothly to the real world?</p>
+  </li>
+  <li>
+    <p>What would it take for a robot to know when it’s unsure about its perception or decision, and explore safely as a result? Can a combination of VLAs and RL lead to verifiably safer systems?</p>
+  </li>
+  <li>
+    <p>Could natural language become a way for people to give feedback and guide a robot’s learning process in real time? How would this combination of natural language through human-feedback differ from a typical Reinforcement Learning through Human Feedback paradigm (RLHF)?</p>
+  </li>
+</ol>
+
+<h2 id="5-conclusion">5. Conclusion</h2>
+
+<p>Integrating Vision-Language-Action models and Reinforcement Learning is a promising direction for improving robot capabilities. VLA models provide semantic understanding, broad generalization, and efficient learning from diverse offline data. RL contributes adaptive optimization, fine grained control, and the ability to discover novel behaviors through environmental interaction.</p>
+
+<p>By carefully integrating these approaches whether through direct RL fine-tuning or hierarchical architectures, we can build robotic systems that combine the semantic richness of large-scale pre-training with RL’s ability to produce precise low-level control. As these methods mature and scale, we move closer to more capable robots that can understand natural language instructions, reason about their environment through visual perception, and continuously improve their capabilities through experience.</p>
+
+<h2 id="6-references">6. References</h2>
+
+<p><em>NOTE: Whenever possible, this post references peer-reviewed literature from the robotics domain. However, some of the most recent works are still in review and thus have not been through the peer-review process yet. These cited works are preprint editions and their Arxiv links are provided.</em></p>
+
+<ol>
+  <li>
+    <p>Haarnoja, T., Zhou, A., Abbeel, P., &amp; Levine, S. (2018). <a href="https://arxiv.org/abs/1801.01290">Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor.</a> <em>ICML 2018</em>.</p>
+  </li>
+  <li>
+    <p>Schulman, J., Wolski, F., Dhariwal, P., Radford, A., &amp; Klimov, O. (2017). <a href="https://arxiv.org/abs/1707.06347">Proximal Policy Optimization Algorithms.</a> <em>arXiv preprint</em>.</p>
+  </li>
+  <li>
+    <p>Shao, Z., Wang, P., Zhu, Q., Xu, R., Song, J., Bi, X., Zhang, H., Zhang, M., Li, Y.K., Wu, Y., &amp; Guo, D. (2024). <a href="https://arxiv.org/abs/2402.03300">DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models.</a> <em>arXiv preprint</em>.</p>
+  </li>
+  <li>
+    <p>Ye, A., Zhang, Z., Wang, B., et al. (2025). <a href="https://arxiv.org/abs/2510.01623">VLA-R1: Enhancing Reasoning in Vision-Language-Action Models.</a> <em>arXiv preprint</em>.</p>
+  </li>
+  <li>
+    <p>Song, Z., Ouyang, G., Li, M., et al. (2025). <a href="https://arxiv.org/abs/2505.16517">ManipLVM-R1: Reinforcement Learning for Reasoning in Embodied Manipulation with Large Vision-Language Models.</a> <em>arXiv preprint</em>.</p>
+  </li>
+  <li>
+    <p>Chen, Y., et al. (2024). <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=11127299">Improving Vision-Language-Action Model with Online Reinforcement Learning (iRe-VLA).</a> <em>ICRA 2025</em>.</p>
+  </li>
+  <li>
+    <p>Wang, Y., Sun, Z., Zhang, J., et al. (2024). <a href="https://proceedings.mlr.press/v235/wang24bn.html">RL-VLM-F: Reinforcement Learning from Vision Language Foundation Model Feedback.</a> <em>ICML 2024</em>.</p>
+  </li>
+  <li>
+    <p>Cheng, A., et al. (2025). <a href="https://www.roboticsproceedings.org/rss21/p018.pdf">NaVILA: Legged Robot Vision-Language-Action Model for Navigation.</a> <em>Robotics: Science and Systems 2025</em>.</p>
+  </li>
+  <li>
+    <p>Jiang, A., Gao, Y., Wang, Y., et al. (2025). <a href="https://arxiv.org/abs/2508.06571">IRL-VLA: Training a Vision-Language-Action Policy via Reward World Model.</a> <em>arXiv preprint</em>.</p>
+  </li>
+  <li>
+    <p>Liu, J., Gao, F., Wei, B., Chen, X., Liao, Q., Wu, Y., Yu, C., &amp; Wang, Y. (2025). <a href="https://arxiv.org/abs/2505.19789">What Can RL Bring to VLA Generalization? An Empirical Study.</a> <em>arXiv preprint</em>.</p>
+  </li>
+  <li>
+    <p>Kim, M. J., Pertsch, K., Karamcheti, S., Xiao, T., Balakrishna, A., Nair, S., Rafailov, R., Foster, E., Lam, G., Sanketi, P., et al. (2024). <a href="https://arxiv.org/abs/2406.09246">OpenVLA: An Open-Source Vision-Language-Action Model.</a> <em>arXiv preprint</em>.</p>
+  </li>
+</ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Autonomous Decision and Control Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

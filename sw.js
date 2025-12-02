@@ -1,8 +1,8 @@
-const version = '20251111163748';
+const version = '20251202102949';
 const cacheName = `static::${version}`;
 
 const buildContentBlob = () => {
-  return ["/posts/classes/","/posts/compute/","/posts/conferences/","/posts/edge-of-knowledge/","/","/assets/css/main.css","/manifest.json","/people/","/posts/publication-checklist/","/publications/","/research/","/resources/","/assets/search.json","/assets/styles.css","/posts/writing/","/posts/yearly-checkin/","/assets/js/lunr/lunr-en.js","/assets/js/lunr/lunr-gr.js","/assets/js/lunr/lunr-store.js","/redirects.json","/pdfs/","/sitemap.xml","/robots.txt","/feed.xml","/assets/logos/ADCL-rounded.svg", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
+  return ["/posts/dmupp-2025/alphago-to-muzero/","/blog/","/posts/classes/","/posts/compute/","/posts/conferences/","/posts/dmupp-2025/diffusion-world-models/","/posts/dmupp-2025/dpfrl-generative-models/","/posts/edge-of-knowledge/","/","/assets/css/main.css","/manifest.json","/people/","/posts/publication-checklist/","/publications/","/research/","/resources/","/posts/dmupp-2025/rl-vla-robotics/","/posts/dmupp-2025/safe-rlhf/","/assets/search.json","/assets/styles.css","/posts/writing/","/posts/yearly-checkin/","/assets/js/lunr/lunr-en.js","/assets/js/lunr/lunr-gr.js","/assets/js/lunr/lunr-store.js","/redirects.json","/pdfs/","/sitemap.xml","/robots.txt","/feed.xml","/assets/logos/ADCL-rounded.svg", "/assets/default-offline-image.png", "/assets/scripts/fetch.js"
   ]
 }
 

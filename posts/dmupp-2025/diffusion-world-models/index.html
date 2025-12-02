@@ -1,0 +1,458 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Diffusion Models: A New Playground for Reinforcement Learning - Autonomous Decision and Control Lab</title>
+<meta name="description" content="Autonomous Decision and Control Lab">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Autonomous Decision and Control Lab">
+<meta property="og:title" content="Diffusion Models: A New Playground for Reinforcement Learning">
+<meta property="og:url" content="https://www.cu-adcl.org//posts/dmupp-2025/diffusion-world-models/">
+
+
+  <meta property="og:description" content="Autonomous Decision and Control Lab">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://www.cu-adcl.org//posts/dmupp-2025/diffusion-world-models/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://www.cu-adcl.org//"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Autonomous Decision and Control Lab Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div style="height: 40px; padding: 10px;">
+  <a class="cu-logo" href="https://www.colorado.edu"><img src="/assets/images/cu.png" width="300" alt="University of Colorado Boulder"></a>
+</div>
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/logos/ADCL-rounded.svg" alt="Autonomous Decision and Control Lab"></a>
+        
+        <a class="site-title" href="/">
+            <!--Autonomous Decision and Control Lab-->
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/people/">People</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Diffusion Models: A New Playground for Reinforcement Learning">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Diffusion Models: A New Playground for Reinforcement Learning
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-link"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#the-basics-of-diffusion-models">The Basics of Diffusion Models</a></li><li><a href="#diffusion-models-for-world-modelling">Diffusion Models for World Modelling</a></li><li><a href="#iterative-training-of-the-reinforcement-learning-agent-and-the-diffusion-model">Iterative Training of the Reinforcement Learning Agent and the Diffusion Model</a></li><li><a href="#a-promising-example">A Promising Example</a></li><li><a href="#limitations">Limitations</a></li><li><a href="#references">References</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>Reinforcement learning (RL) has achieved remarkable progress in solving complex decision-making problems, from playing Go and mastering Atari games (<a href="#schrittwieser2019masteringag">Schrittwieser et al., 2019</a>) to robotic control. Yet, one major limitation remains — <strong>sample inefficiency</strong>. RL agents often require millions of interactions with their environments to learn effective policies. In the real world, such exhaustive trial-and-error is often impractical or prohibitively time expensive.</p>
+
+<p>To address this, researchers have turned to <strong>world models</strong> — generative models that learn to simulate environments. Instead of interacting with the real world at every step, an agent can learn by imagining outcomes within its learned world model. This idea, popularized by works like <em>World Models</em> (<a href="#ha2018worldm">Ha &amp; Jü, 2018</a>), has inspired a line of research into using generative modeling as a core component to train RL agents.</p>
+
+<p align="center">
+  <img src="/assets/images/dmupp-2025/diffusion-world-models/bike.jpg" alt="World Models" width="200" />
+  <br />
+  <em>Figure 1: A World Model. Credit to (<a href="#mccloud1993understanding">Scott McCloud, 1993</a>) .</em>
+</p>
+
+<p>Over time, a variety of generative modelling approaches have been explored to serve as effective world models, including <strong>Variational Autoencoders (VAEs)</strong>, <strong>Generative Adversarial Networks (GANs)</strong>, and <strong>Flow-based models</strong>.</p>
+
+<ul>
+  <li><strong>VAEs</strong> are stable and easy to train but rely on a surrogate loss, which can lead to blurry reconstructions (<a href="#kingma2013autoencodingvb">Kingma &amp; Welling, 2013</a>). This can be limiting when high-fidelity state predictions are required for planning in RL.</li>
+  <li><strong>GANs</strong> can produce highly realistic samples, but their adversarial training often leads to instability and mode collapse, resulting in limited diversity — a critical drawback when trying to capture all possible environment states (<a href="#goodfellow2014generativean">Goodfellow et al., 2014</a>) (<a href="#arjovsky2017towardspm">Martí, 2017</a>) .</li>
+  <li><strong>Flow-based models</strong> learn bijective mappings between data and latent spaces, allowing for exact likelihood estimation and stable training (<a href="#jimenezrezende2015variationaliw">Rezende &amp; Mohamed, 2015</a>). However, they require carefully designed architectures to maintain reversibility, which can limit flexibility and scalability in modeling complex, high-dimensional environments.</li>
+</ul>
+
+<p>While VAEs, GANs, and flow models have all been explored as world models, each involves trade-offs that can affect their use in RL. This has led researchers to investigate <strong>diffusion models</strong>, a newer class of generative models with a different approach to modeling data distributions.</p>
+
+<h2 id="the-basics-of-diffusion-models">The Basics of Diffusion Models</h2>
+
+<p>Diffusion models are inspired by non-equilibrium thermodynamics, where systems naturally evolve from low-entropy (ordered) states to high-entropy (disordered) states. They define a Markov chain of diffusion steps that gradually add random noise to data, mimicking the physical process of diffusion. The model then learns to reverse this process — transforming noise back into structured data — effectively moving from a high-entropy to a low-entropy state.</p>
+
+<p align="center">
+  <img src="/assets/images/dmupp-2025/diffusion-world-models/diffusion_process2.png" alt="World Models" width="600" />
+  <br />
+  <em><i>
+  Figure 2: Example of a trained diffusion model for modeling a 2D swiss roll data. Credit to (<a href="#sohldickstein2015deepul">Sohl-Dickstein et al., 2015</a>)
+  </i>.</em>
+</p>
+
+<p>Through this learned denoising dynamics, diffusion models can generate realistic data samples by starting from random noise and iteratively reconstructing the underlying structure of the data distribution. Conceptually, this can be seen as an encoding–decoding process, like VAEs or flow-based models, where the forward diffusion “encodes” data into a noisy latent and the reverse process “decodes” it back into structured samples. However, unlike VAEs or flows, the forward procedure is fixed (not learned), and the latent variables have the same dimensionality as the original data rather than being compressed into a smaller latent space.</p>
+
+<p>The forward and backward processes in diffusion models can be formulated in both discrete and continuous forms. We will briefly mention the discrete form as it is the original historical formulation, but our focus will be on the continuous form, which is more generic and better captures complex, high-dimensional dynamics.</p>
+
+<p>In the <strong>discrete-time formulation</strong>, the forward process gradually adds noise to a data sample $x^0$ over $T$ timesteps, producing a sequence ${x^1, x^2, \dots, x^T}$.
+At each step $\tau$, noise is added according to a predefined schedule $\beta_\tau$:</p>
+
+\[x^\tau = \sqrt{1 - \beta_\tau} \, x^{\tau-1} + \sqrt{\beta_\tau} \, \epsilon_\tau, \quad \epsilon_\tau \sim \mathcal{N}(0, I)\]
+
+<p>The backward process learns to reverse this noising process by estimating the conditional distribution $p_\theta(x^{\tau-1} \mid x^\tau)$, typically parameterized by a neural network.</p>
+
+<p>In the <strong>continuous-time formulation</strong>, the forward process is modeled as a stochastic differential equation (SDE), which smoothly diffuses the data into noise:</p>
+
+\[dx = f(x, \tau) \, d\tau + g(\tau) \, dW_\tau\]
+
+<p>where $f(x, \tau)$ represents a predefined deterministic drift term, $g(\tau)$ a predefined diffusion coefficient, and $dW_\tau$ denotes a Wiener process (Brownian motion).</p>
+
+<p>The backward process then corresponds to a reverse-time SDE, which removes noise by following the time-reversed dynamics:</p>
+
+\[dx = [f(x, \tau) - g(\tau)^2 \nabla_x \log p_\tau(x)] \, d\tau + g(\tau) \, d\bar{W}_\tau\]
+
+<p>where $d\bar{W}_{\tau}$ represents the reverse-time Wiener process and $\nabla_x \log p_\tau(x)$ the score function of the noisy distribution at time $\tau$.</p>
+
+<p>The score function $\nabla_x \log p_\tau(x)$ represents the gradient of the log-probability of the data at time $\tau$, pointing toward regions of higher likelihood. It adjusts the drift $f(x, \tau)$ in the reverse-time SDE, guiding $x$ to produce realistic samples.</p>
+
+<p>Since the distribution $p_\tau(x)$ is generally unknown, the score function $\nabla_x \log p_\tau(x)$ is also unknown and must be estimated from data. Diffusion models achieve this by leveraging a combination of sampling and learning. A typical approach assumes that the deterministic shift function $f(x, \tau)$ is affine, which simplifies the mathematics and allows the forward diffusion process to reach any intermediate time $\tau$ analytically using a Gaussian perturbation kernel $p^{0}_ {\tau}(x^\tau \mid x^0)$. The procedure then proceeds as follows:</p>
+
+<ol>
+  <li><strong>Sample clean data</strong> $x^0$ from the target distribution.</li>
+  <li><strong>Corrupt the samples</strong> by simulating the forward diffusion to obtain $x^\tau$ at the desired time $\tau$. If $f$ is affine, this can be done in a single step using the known Gaussian kernel.</li>
+  <li>
+    <p><strong>Train a score model</strong> $s_\theta(x, \tau)$ to estimate the score function by minimizing a denoising objective such as (<a href="#karras2022elucidatingtd">Karras et al., 2022</a>):</p>
+
+\[\mathbb{E}_{x^0, x^\tau \sim p^{0}_{\tau}} \left[ \left\| s_\theta(x^\tau, \tau) - \nabla_{x^\tau} \log p^{0} _{\tau}(x^\tau \mid x^0) \right\|^2 \right]\]
+  </li>
+</ol>
+
+<p>Once trained, this score model provides an approximation of $\nabla_x \log p_\tau(x)$ at any time $\tau$, allowing the backward SDE to iteratively denoise samples and generate realistic data from pure noise.</p>
+
+<h2 id="diffusion-models-for-world-modelling">Diffusion Models for World Modelling</h2>
+
+<p>In the context of world modeling for sequential decision-making, the goal is to learn a generative model of the environment dynamics — that is, to predict the next observation of the system given past observations and actions. Formally, we aim to model a conditional generative distribution:
+\(p_\theta(x_{t+1} \mid x_{\le t}, a_{\le t}),\)</p>
+
+<p>where $x_{t+1}$ is the next (unknown) observation, $x_{\le t} = {x_0, \dots, x_t}$ are past observations, and $a_{\le t} = {a_0, \dots, a_t}$ are past actions. Unlike unconditional diffusion models, here the diffusion model must condition on the history of observations and actions to accurately predict the future.</p>
+
+<p><strong>To train a diffusion model</strong> for world modeling, we first need to collect trajectories $(x_0, a_0, x_1, a_1, \dots, x_t, a_t, x_{t+1})$ from the real environment to obtain clean next observations $x_{t+1}$ as targets. Once we have these trajectories, we treat $x_{t+1}$ as the “clean” data and corrupt it with a Gaussian perturbation kernel to produce a noisy sample $x_{t+1}^\tau$. The model then learns a conditional score function $s_\theta(x_{t+1}^\tau, \tau \mid x_{\le t}, a_{\le t})$ that estimates the gradient of the log-probability of the noisy next observation. The training objective is the following loss:</p>
+
+\[\mathcal{L}(\theta) = \mathbb{E}_{x_{t+1}, \, x_{t+1}^\tau \sim p^0_\tau} \Big[ \| s_\theta(x_{t+1}^\tau, \tau \mid x_{\le t}, a_{\le t}) - \nabla_{x_{t+1}^\tau} \log p^0_\tau(x_{t+1}^\tau \mid x_{t+1}) \|^2 \Big],\]
+
+<p>which encourages the model to reverse the corruption process and recover $x_{t+1}$ conditioned on past observations and actions.</p>
+
+<p><strong>Once the diffusion model is trained</strong>, it can be used as a generative model for decision-making. In this setting, the next observation $x_{t+1}$ is typically unknown and is initially represented either as Gaussian noise or a prior estimate. The model then iteratively denoises this sample, step by step, using the reverse-time SDE, conditioned on past observations and actions. This procedure generates a realistic prediction of the next state, which can be used to train a RL agent.</p>
+
+<p align="center">
+  <img src="/assets/images/dmupp-2025/diffusion-world-models/kungfu.gif" alt="World Models" width="600" />
+  <br />
+  <em>Figure 3: The diffusion model takes into account the agent's action and the previous frames to simulate the environment response. Credit to (<a href="#alonso2024diffusionfw">Alonso et al., 2024</a>).</em>
+</p>
+
+<h2 id="iterative-training-of-the-reinforcement-learning-agent-and-the-diffusion-model">Iterative Training of the Reinforcement Learning Agent and the Diffusion Model</h2>
+
+<p>In general, diffusion models and reinforcement learning (RL) agents are not trained fully separately but rather in an iterative loop, where both models are improved in alternating phases. The typical procedure involves three main steps:</p>
+
+<ol>
+  <li>
+    <p><strong>Collect real data:</strong> The RL agent interacts with the real environment collecting trajectories of observations, actions,rewards, and termination signals in a replay buffer.</p>
+  </li>
+  <li>
+    <p><strong>Train the world model:</strong> A diffusion-based world model is trained using all data from the replay buffer. In addition to modeling the next observation, auxiliary components such as a <strong>reward model</strong> and a <strong>termination model</strong> are included to fully capture the environment dynamics.</p>
+  </li>
+  <li>
+    <p><strong>Train the RL agent in imagination:</strong> Once the world model is trained, it replaces the real environment during policy optimization. The agent is trained by imagining trajectories—simulating rollouts within the learned model—using the predicted next observations, rewards, and terminations.</p>
+  </li>
+</ol>
+
+<p>These three steps are <strong>repeated in a loop</strong>, allowing the world model to continuously refine its understanding of the environment while the RL agent progressively improves its policy through imagined experiences.</p>
+
+<h2 id="a-promising-example">A Promising Example</h2>
+
+<p>A recent paper, <em>Diffusion for World Modeling: Visual Details Matter in Atari</em> (<a href="#alonso2024diffusionfw">Alonso et al., 2024</a>), presents <strong>DIAMOND</strong>, a RL-agent trained on a diffusion-based world model that achieves impressive performance on the <strong>Atari 100k benchmark</strong>. This benchmark evaluates agents across 26 Atari games, where each agent is allowed only 100k real environment interactions—roughly equivalent to two hours of human gameplay—to train its world model. For context, traditional RL agents without world models are typically trained in the environment for up to 50 million steps, meaning DIAMOND needs <strong>500× less interactions</strong> with the environment.</p>
+
+<p>DIAMOND is compared against several state-of-the-art world model agents, including <strong>STORM</strong> (<a href="#zhang2023storm">Zhang et al., 2023</a>), <strong>DreamerV3</strong> (<a href="#hafner2023dreamerv3">Hafner et al., 2023</a>), <strong>IRIS</strong> (<a href="#micheli2023iris">Micheli et al., 2023</a>), <strong>TWM</strong> (<a href="#robine2023twm">Robine et al., 2023</a>), and <strong>SimPle</strong> (<a href="#kaiser2019simple">Kaiser et al., 2019</a>). In aggregate performance, DIAMOND achieves a <strong>superhuman mean human-normalized score (HNS) of 1.46</strong>, outperforming all previous world model agents, and exceeding human-level performance on <strong>11 out of 26 games</strong>. Notably, its interquartile mean (IQM) performance matches that of STORM while surpassing all other baselines, demonstrating consistent performance across games. DIAMOND particularly excels in visually detailed environments such as <em>Asterix</em>, <em>Breakout</em>, and <em>Road Runner</em>, where precise visual modeling directly influences decision-making.</p>
+
+<p align="center">
+  <img src="/assets/images/dmupp-2025/diffusion-world-models/human_score.png" alt="World Models" width="600" />
+  <br />
+  <em>
+  Figure 4: Mean and interquartile mean human normalized scores. Credit to (<a href="#alonso2024diffusionfw">Alonso et al., 2024</a>).
+  </em>
+</p>
+
+<p>A key comparison is with <strong>IRIS</strong>, a world model based on a <strong>Variational Autoencoder (VAE)</strong> architecture. While IRIS generates plausible trajectories, they often suffer from <strong>visual inconsistencies between consecutive frames</strong>—for example, enemies being rendered as rewards or vice versa. Although these discrepancies may only affect a few pixels, they can drastically alter the agent’s learning process, as reward-related information is critical for policy optimization. In contrast, DIAMOND’s diffusion-based approach produces <strong>visually consistent trajectories</strong>, more accurately reflecting the true environment. These improvements in visual fidelity directly translate to stronger agent performance across several games.</p>
+
+<p align="center">
+  <img src="/assets/images/dmupp-2025/diffusion-world-models/iris-diamond.png" alt="World Models" width="900" />
+  <br />
+  <em>
+  Figure 5: Consecutive frames imagined with IRIS (left) and DIAMOND (right). The white square highlights the visual inconsistencies.  Credit to (<a href="#alonso2024diffusionfw">Alonso et al., 2024</a>).
+  </em>
+</p>
+
+<p>Overall, DIAMOND provides compelling evidence that diffusion models can significantly advance world modeling for reinforcement learning, enabling more accurate, visually coherent, and data-efficient policy learning.</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>While diffusion models offer promising capabilities for generative world modeling, several limitations remain when applying them within reinforcement learning (RL) settings:</p>
+
+<ul>
+  <li>
+    <p><strong>Discrete vs. Continuous Control:</strong>
+Current implementations are primarily evaluated in discrete action spaces. It remains uncertain how well these methods would generalize to continuous control environments, such as those involving robotic joint torques or accelerations.</p>
+  </li>
+  <li>
+    <p><strong>Limited Temporal Context:</strong>
+ For computational efficiency, frame stacking is usually necessary. Instead of providing all past observations, the model only receives the last 𝐻 frames, introducing a form of short-term memory. However, this context is limited—information beyond 𝐻 steps is discarded. In scenarios with repetitive frames (e.g., static visual inputs like walls), the model may lose context and generate unrealistic or inconsistent dynamics.</p>
+  </li>
+  <li>
+    <p><strong>Reward and Termination Extraction:</strong>
+When integrating diffusion models into RL pipelines, it is not straightforward how to derive reward signals or termination conditions directly from the generative representation. For example, in the DIAMOND framework, a separate reward and termination model is used alongside the diffusion model to handle these aspects effectively.</p>
+  </li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<p><a id="alonso2024diffusionfw"></a>
+<strong>Alonso, E., Jelley, A., Micheli, V., Kanervisto, A., Storkey, A., Pearce, T., et al. (2024).</strong> Diffusion for World Modeling: Visual Details Matter in Atari. <em>Thirty-eighth Conference on Neural Information Processing Systems</em>. <a href="https://arxiv.org/abs/2405.12399">https://arxiv.org/abs/2405.12399</a></p>
+
+<p><a id="goodfellow2014generativean"></a>
+<strong>Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., et al. (2014).</strong> Generative Adversarial Nets. <em>Neural Information Processing Systems</em>. <a href="https://api.semanticscholar.org/CorpusID:261560300">https://api.semanticscholar.org/CorpusID:261560300</a></p>
+
+<p><a id="ha2018worldm"></a>
+<strong>Ha, D. R., &amp; Jü (2018).</strong> World Models. <em>ArXiv</em>, abs/1803.10122. <a href="https://api.semanticscholar.org/CorpusID:4807711">https://api.semanticscholar.org/CorpusID:4807711</a></p>
+
+<p><a id="hafner2023dreamerv3"></a>
+<strong>Hafner, D., Pasukonis, J., Ba, J., Lillicrap, T., &amp; Lillicrap, T. (2023).</strong> Mastering Diverse Domains through World Models. <em>ArXiv</em>, abs/2301.04104. <a href="https://arxiv.org/abs/2301.04104">https://arxiv.org/abs/2301.04104</a></p>
+
+<p><a id="kaiser2019simple"></a>
+<strong>Kaiser, L., Babaeizadeh, M., Milos, P., Osinski, B., Campbell, R. H., Czechowski, K., et al. (2019).</strong> Model-Based Reinforcement Learning for Atari. <em>International Conference on Learning Representations</em>. <a href="https://arxiv.org/abs/1903.00374">https://arxiv.org/abs/1903.00374</a></p>
+
+<p><a id="karras2022elucidatingtd"></a>
+<strong>Karras, T., Aittala, M., Aila, T., Laine, S., &amp; Laine, S. (2022).</strong> Elucidating the Design Space of Diffusion-Based Generative Models. <em>ArXiv</em>, abs/2206.00364. <a href="https://api.semanticscholar.org/CorpusID:249240415">https://api.semanticscholar.org/CorpusID:249240415</a></p>
+
+<p><a id="kingma2013autoencodingvb"></a>
+<strong>Kingma, D. P., &amp; Welling, M. (2013).</strong> Auto-Encoding Variational Bayes. <em>CoRR</em>, abs/1312.6114. <a href="https://api.semanticscholar.org/CorpusID:216078090">https://api.semanticscholar.org/CorpusID:216078090</a></p>
+
+<p><a id="arjovsky2017towardspm"></a>
+<strong>Martí (2017).</strong> Towards Principled Methods for Training Generative Adversarial Networks. <em>ArXiv</em>, abs/1701.04862. <a href="https://api.semanticscholar.org/CorpusID:18828233">https://api.semanticscholar.org/CorpusID:18828233</a></p>
+
+<p><a id="micheli2023iris"></a>
+<strong>Micheli, V., Alonso, E., &amp; Fleuret, F. (2023).</strong> Transformers are Sample-Efficient World Models. <em>International Conference on Learning Representations</em>. <a href="https://arxiv.org/abs/2209.00588">https://arxiv.org/abs/2209.00588</a></p>
+
+<p><a id="jimenezrezende2015variationaliw"></a>
+<strong>Rezende, D. J., &amp; Mohamed, S. (2015).</strong> Variational Inference with Normalizing Flows. <em>ArXiv</em>, abs/1505.05770. <a href="https://api.semanticscholar.org/CorpusID:12554042">https://api.semanticscholar.org/CorpusID:12554042</a></p>
+
+<p><a id="robine2023twm"></a>
+<strong>Robine, J., Höftmann, M., Uelwer, T., Harmeling, S., &amp; Harmeling, S. (2023).</strong> Transformer-based World Models Are Happy With 100k Interactions. <em>ArXiv</em>, abs/2303.07109. <a href="https://arxiv.org/abs/2303.07109">https://arxiv.org/abs/2303.07109</a></p>
+
+<p><a id="schrittwieser2019masteringag"></a>
+<strong>Schrittwieser, J., Antonoglou, I., Hubert, T., Simonyan, K., Sifre, L., Schmitt, S., et al. (2019).</strong> Mastering Atari, Go, chess and shogi by planning with a learned model. <em>Nature</em>, 588, 604 - 609. <a href="https://api.semanticscholar.org/CorpusID:208158225">https://api.semanticscholar.org/CorpusID:208158225</a></p>
+
+<p><a id="sohldickstein2015deepul"></a>
+<strong>Sohl-Dickstein, J. N., Weiss, E. A., Maheswaranathan, N., Ganguli, S., &amp; Ganguli, S. (2015).</strong> Deep Unsupervised Learning using Nonequilibrium Thermodynamics. <em>ArXiv</em>, abs/1503.03585. <a href="https://api.semanticscholar.org/CorpusID:14888175">https://api.semanticscholar.org/CorpusID:14888175</a></p>
+
+<p><a id="zhang2023storm"></a>
+<strong>Zhang, W., Wang, G., Sun, J., Yuan, Y., Huang, G., &amp; Huang, G. (2023).</strong> STORM: Efficient Stochastic Transformer based World Models for Reinforcement Learning. <em>Advances in Neural Information Processing Systems</em>, 36. <a href="https://arxiv.org/abs/2310.09615">https://arxiv.org/abs/2310.09615</a></p>
+
+<p><a id="mccloud1993understanding"></a>
+<strong>McCloud, S. (1993).</strong> <em>Understanding Comics: The Invisible Art.</em> Tundra Publishing. <a href="https://en.wikipedia.org/wiki/Understanding_Comics">https://en.wikipedia.org/wiki/Understanding_Comics</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Autonomous Decision and Control Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
