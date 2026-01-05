@@ -11,12 +11,6 @@ var store = [{
         "url": "/people/himanshu/",
         "teaser": null
       },{
-        "title": "Jackson",
-        "excerpt":"Hey! My name is Jackson and I’m a Master’s student in the Electrical Engineering department at CU Boulder studying dynamics and controls. I recieved my bachelor’s in Electrical engineering from Washington State University. My current research involves using reinforcement learning to find causes of failure in systems, a method called...","categories": [],
-        "tags": [],
-        "url": "/people/jackson/",
-        "teaser": null
-      },{
         "title": "John",
         "excerpt":"Hi! My name is John and I am a first year M.Sc. student in the Aerospace Engineering Department at CU Boulder. I received my Bachelor’s degree in Aerospace Engineering from CU Boulder in May 2021. My current research broadly deals with validating cyber-physical systems using a reinforcement learning framework known...","categories": [],
         "tags": [],
