@@ -3,10 +3,10 @@ title: People
 layout: single 
 
 header:
-    overlay_image: "assets/images/adcl-group.jpg"
+    overlay_image: "assets/images/adcl-group-nov-2025.jpg"
 
 permalink: /people/
-class: people
+classes: people
 toc: true
 toc_label: "Quick Links"
 toc_icon: "link"
@@ -21,6 +21,8 @@ toc_sticky: true
 
 {% for role in roles %}
 {% assign rolepair = role | split: '#' %}
+{% assign role_people = sorted | where: "status", "current" | where: "program", rolepair[1] %}
+{% if role_people.size > 0 %}
 ## {{rolepair[0]}}
 {% for person in sorted %}
 {% if person.status == "current" and person.program == rolepair[1] %}
@@ -65,6 +67,7 @@ toc_sticky: true
 </div>
 {% endif %}
 {% endfor %}
+{% endif %}
 {% endfor %}
 <br>
 
