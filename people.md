@@ -3,7 +3,8 @@ title: People
 layout: single 
 
 header:
-    overlay_image: "assets/images/adcl-group-nov-2025.jpg"
+    overlay_image: "assets/images/adcl-group.jpg"
+    caption: "2023 ADCL"
 
 permalink: /people/
 classes: people
