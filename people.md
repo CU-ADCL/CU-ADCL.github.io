@@ -25,6 +25,7 @@ toc_sticky: true
 {% assign role_people = sorted | where: "status", "current" | where: "program", rolepair[1] %}
 {% if role_people.size > 0 %}
 ## {{rolepair[0]}}
+<div class="people-grid">
 {% for person in sorted %}
 {% if person.status == "current" and person.program == rolepair[1] %}
 <div class="person">
@@ -68,12 +69,13 @@ toc_sticky: true
 </div>
 {% endif %}
 {% endfor %}
+</div>
 {% endif %}
 {% endfor %}
-<br>
 
 # Alumni
 
+<div class="people-grid">
 {% for person in site.people %}
 {% if person.status == "former" %}
 <div class="person">
@@ -107,4 +109,4 @@ toc_sticky: true
 </div>
 {% endif %}
 {% endfor %}
-
+</div>

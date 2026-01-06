@@ -35,3 +35,16 @@
     margin-top: 1em;
     margin-bottom: 1.75em;
 }
+
+// Responsive grid for people
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5em 2em;
+}
+
+@media (max-width: 600px) {
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+}
