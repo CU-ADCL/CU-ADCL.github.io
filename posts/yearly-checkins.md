@@ -12,14 +12,14 @@ The yearly check in is a time for us to review, reflect on, and communicate abou
 
 ## Slide Deck
 
-In preparation, please reflect on the last year and future and prepare a slide deck or document using the outline below for inspiration (unless the bullets are marked as required, you do not need to respond to all of them). Please **send it to me at least 48 hours before our meeting** so that I can review it.
+In preparation, please reflect on the last year and future and prepare a slide deck or document using the outline below for inspiration (**unless the bullets are marked as required, you do not need to respond to all of them**).
 
+Please **send it to me at least 48 hours before our meeting** so that I can review it.
 Note that you can just paste this into slides.com [here](https://adcl.slides.com/tools/markdown-to-presentation) and it will automagically generate the slides so that you can fill them in.
 
 ```markdown
 ## Accomplishments in the last year
-- Do you feel you made good progress in your PhD program this year?
-- Summarize the following accomplishments
+- Summarize the progress that you made in the last year:
   - Research discoveries/conclusions
   - Papers submitted and published
   - Conferences and workshops attended
@@ -30,9 +30,17 @@ Note that you can just paste this into slides.com [here](https://adcl.slides.com
 
 ---
 
-## Challenges/disappointments in the last year
+## PhD Progress and Challenges
+- Do you think you've made adequate progress on your PhD this year?
 - Any challenges that have made it difficult to progress in your PhD that you would like to discuss with me
-- Any aspects of your PhD that you feel negative about and would like to discuss with me
+- On a day-to-day basis, what occupies your thoughts about your PhD most? Examples:
+    - Mastering specific technical concepts
+    - Doing more impactful research
+    - Breaking down the PhD into daily chunks
+    - How my work compares to the work of others around me
+    - Becoming a world-class researcher recognized for expertise in a particular field
+    - Balancing PhD work and other things in life
+    - Future career goals
 
 ---
 
@@ -46,7 +54,6 @@ Note that you can just paste this into slides.com [here](https://adcl.slides.com
 ---
 
 ## Future
-
 - What do you plan to do after your PhD?
 
 ---
