@@ -49,7 +49,7 @@ This schedule may slip a bit, and this is normal. However, if the schedule slips
 - [ ] Add new entry to the top of [our-pubs.bib](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/our-pubs.bib):
     - [ ] Add the extra field `note={Under review}`
     - [ ] Add a field annotating which authors are lab members (this helps for proposals). If the first and second authors are students and Zach is the fourth author, you would use `author+an={1=student;2=student;4=zach}`.
-    - [ ] Remove old entry from [unsubmitted.bib](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/unsubmitted.bib)
+    - [ ] Remove old entry from [unsubmitted.bib](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/unsubmitted.bib) if it exists.
 
 ### After Acceptance
 
