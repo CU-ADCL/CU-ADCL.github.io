@@ -54,8 +54,8 @@ This schedule may slip a bit, and this is normal. However, if the schedule slips
 ### After Acceptance
 
 - [ ] Update entry in [our-pubs.bib](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/bibliography/our-pubs.bib) by removing the under/review
-- [ ] Add entry to [news.csv](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/_data/news.csv)
-- [ ] Make sure Acknowledgements to all funding sources have been included.
+- [ ] Post on the lab LinkedIn!
+- [ ] **Make sure Acknowledgements to all funding sources have been included.**
 
 ### After Final Camera-Ready Submission
 
