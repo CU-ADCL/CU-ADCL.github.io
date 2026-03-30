@@ -11,14 +11,14 @@ toc_sticky: true
 
 Our research focuses on artificial intelligence for controlling complex systems. We usually focus on autonomous aerospace systems, from space probes to drones to telescopes for tracking space debris, but we have also worked on other systems including ecological communities and autonomous cars. The theme that unites all of our research is **uncertainty**. This could be uncertainty in the system's parameters or states or in how other people, systems, or the environment will interact with it. We approach our research from many perspectives, ranging from pure mathematical theory to numerical simulation to hardware experiments. The mathematical formalisms that we most often use are the partially observable Markov decision process (POMDP) for stochastic uncertainty, or various game formalisms when the uncertainty is worst case or introduced by other rational agents. One of our most important specialties is developing online tree search algorithms for POMDPs, and we are one of the world's leading centers of development for this approach.
 
-The best way to view our most up-to-date research is to look at our [Publications page](/publications). Some slides and brief descriptions of some of our projects can be found below. (If you cannot see the slides, make sure to disable all add blockers.)
+The best way to view our most up-to-date research is to look at our [Publications page](/publications).
+Some slides and brief descriptions of some of our projects can be found below. (If you cannot see the slides, make sure to disable all add blockers.)
 
 <iframe src="https://adcl.slides.com/zacharysunberg/adcl-summary/embed?style=light" width="100%" style="aspect-ratio:16/9" allowfullscreen title="ADCL Summary"></iframe>
 
+Another good introduction to our work is Zach's Autonomy Talks presentation from 2024:
 
-
-
-
+<iframe width="1384" height="865" src="https://www.youtube.com/embed/XDIyX0tanjk" title="Autonomy Talks - Zachary Sunberg: Breaking the curse of dimensionality in POMDPs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Applications and Extensions
 
