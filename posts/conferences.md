@@ -34,3 +34,4 @@ To add more information, edit this file: [https://github.com/CU-ADCL/CU-ADCL.git
 |ICML| Jul  | Jan |
 |RLC | Aug | Feb |
 |AISTATS | May | Oct |
+|SMC (IEEE International Conference on Systems, Man, and Cybernetics) | Oct | Mar |
