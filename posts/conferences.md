@@ -21,7 +21,7 @@ To add more information, edit this file: [https://github.com/CU-ADCL/CU-ADCL.git
 |CDC | Dec | Mar |
 |SciTech | Jan | Jun (abstract) |
 |ITSC | Sep | Mar |
-|CoRL | Nov | Jul |
+|CoRL | Nov | May |
 |NeurIPS | Dec | May |
 |IEEE Aerospace | March | Oct |
 |IEEE Intelligent Vehicles Symposium | July | Feb |
