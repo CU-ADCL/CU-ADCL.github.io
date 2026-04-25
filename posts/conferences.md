@@ -7,31 +7,33 @@ class: resources
 
 To add more information, edit this file: [https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/posts/conferences.md](https://github.com/CU-ADCL/CU-ADCL.github.io/blob/main/posts/conferences.md)
 
+*Sorted by submission deadline.*
+
 |Title|Usual Month|Usual Deadline|
 |-----|----|----|
-|ICRA | May | Sep  |
-|ACC | June/July | Sep |
-|AAAI | February | Aug |
-|ICAPS| June | Nov|
-|AAMAS | May | Nov|
 |IJCAI | July | Jan |
+|ICML| Jul  | Jan |
 |RSS | July | Feb |
 |UAI | Aug | Feb |
-|IROS | Oct | Mar |
-|CDC | Dec | Mar |
-|SciTech | Jan | Jun (abstract) |
-|ITSC | Sep | Mar |
-|CoRL | Nov | May |
-|NeurIPS | Dec | May |
-|IEEE Aerospace | March | Oct |
 |IEEE Intelligent Vehicles Symposium | July | Feb |
 |WAFR (Workshop on the Algorithmic Foundations of Robotics) | June/July | Feb |
-| DASC | Sept | March (abstract) |
-| Safety, Security, and Rescue Robotics (SSRR) | October | June |
 |ICUAS | June | Feb |
-|L4DC | June | Dec |
-|CHI  | Apr/May | Sept |
-|ICML| Jul  | Jan |
 |RLC | Aug | Feb |
-|AISTATS | May | Oct |
+|IROS | Oct | Mar |
+|CDC | Dec | Mar |
+|ITSC | Sep | Mar |
+| DASC | Sept | March (abstract) |
 |SMC (IEEE International Conference on Systems, Man, and Cybernetics) | Oct | Mar |
+|CoRL | Nov | May |
+|NeurIPS | Dec | May |
+|SciTech | Jan | Jun (abstract) |
+| Safety, Security, and Rescue Robotics (SSRR) | October | June |
+|AAAI | February | Aug |
+|ICRA | May | Sep  |
+|ACC | June/July | Sep |
+|CHI  | Apr/May | Sept |
+|IEEE Aerospace | March | Oct |
+|AISTATS | May | Oct |
+|ICAPS| June | Nov|
+|AAMAS | May | Nov|
+|L4DC | June | Dec |
