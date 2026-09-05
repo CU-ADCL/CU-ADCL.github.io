@@ -5,8 +5,8 @@ email: max.conway@colorado.edu
 program: PhD Student
 status: current
 picture: /assets/images/max_conway.jpg
-picture-link: https://maxconwa.github.io/
-header-link: https://maxconwa.github.io/
+picture-link:
+header-link:
 research:
 ---
 
