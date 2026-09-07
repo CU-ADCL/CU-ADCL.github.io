@@ -35,6 +35,12 @@ var store = [{
         "url": "/people/mark/",
         "teaser": null
       },{
+        "title": "Max",
+        "excerpt":"Hi, I’m Max. I’m a third-year PhD student in the Department of Computer Science at CU Boulder. My research focuses on humanoid robots that plan with learned models. I build the autonomy stacks that let them do precise physical work, and study how learned models of the world and the...","categories": [],
+        "tags": [],
+        "url": "/people/max/",
+        "teaser": null
+      },{
         "title": "Mel",
         "excerpt":"I’m a third-year PhD student at Vanderbilt University, working with ADCL over the summer of 2025 to develop a Julia framework for working with fully continuous, differentiable partially observable multiagent scenarios. At my home lab - the Vanderbilt Mathematical Programming and Intelligent Robotics Lab (VAMPIR) - I build algorithms for...","categories": [],
         "tags": [],
