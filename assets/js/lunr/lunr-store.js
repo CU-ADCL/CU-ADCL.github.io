@@ -5,6 +5,12 @@ var store = [{
         "url": "/people/ben/",
         "teaser": null
       },{
+        "title": "Ben_falco",
+        "excerpt":"Hi, I’m Ben. I’m currently a PhD student in robotics at the University of Colorado Boulder. Before joining ADCL, I completed my bachelor’s degree in aerospace engineering at the University of Maryland in College Park. My research interests include differential games, agile motion for Unmanned Aerial Vehicles such as quadrotors,...","categories": [],
+        "tags": [],
+        "url": "/people/ben_falco/",
+        "teaser": null
+      },{
         "title": "Himanshu",
         "excerpt":"Hey! I’m Himanshu. I am a Ph.D student in the Aerospace Department at CU Boulder. Currently, my research interests include - sequential decision making in partially observable environments that have arbitrary uncertainties, autonomous navigation for vehicles and manipulators among dynamic obstacles, and designing continuous action space online POMDP solvers. Prior...","categories": [],
         "tags": [],
