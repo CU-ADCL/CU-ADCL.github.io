@@ -23,7 +23,7 @@ Prof. Sunberg generally has limited capacity to fund or serve as primary thesis 
 
 ## Prospective Undergraduate Researchers
 
-We have limited ability to support undergraduate researchers. The best way to get started with undergraduate research is through the [Summer Program for Undergraduate Research (CU SPUR)](https://www.colorado.edu/engineering/students/research-opportunities/summer-program-undergraduate-research-cu-spur) or the academic-year Discovery Learning Apprenticeship (DLA) program.
+We have limited ability to support undergraduate researchers. However, part of our mission is to help undergraduates find their place in the engineering ecosystem, so we encourage undergraduates to ask their professors about research. The best way to get started with undergraduate research is through the [Summer Program for Undergraduate Research (CU SPUR)](https://www.colorado.edu/engineering/students/research-opportunities/summer-program-undergraduate-research-cu-spur) or the academic-year Discovery Learning Apprenticeship (DLA) program. Please reach out to Professor Sunberg via email or come to office hours if you are an undergraduate at CU interested in doing research with the ADCL. Include a resume and transcript if you send an email.
 
 Prof. Sunberg's three pieces of advice for prospective undergraduate researchers:
 
