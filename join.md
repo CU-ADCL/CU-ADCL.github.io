@@ -30,3 +30,7 @@ Prof. Sunberg's three pieces of advice for prospective undergraduate researchers
 1. **Work hard in your courses.** Grades are not a perfect way to assess skills, but they are one of the only indicators we have for deciding who to work with in research. Going deeper with course projects is a particularly good way to show your interest and skills.
 2. **Go to office hours** and get to know the professors you want to work with.
 3. **Get involved in engineering clubs**, like the sounding rocket club or whatever you are most interested in. This can help you demonstrate and hone your skills.
+
+## Other Inquiries
+
+Unfortunately at this time we are unable to support other research arrangements such as remote internships.
